@@ -1,10 +1,7 @@
 //Author: Alexander Adu-Sarkodie
-//Vanilla JavaScript orchestrated Rock, Paper , Scissors game
+//Vanilla JavaScript orchestrated: Rock, Paper , Scissors game
 
-//console.log("Hey");
-
-//Caching DOM ELEMENTS to enhance Performance: re-usable Core properties/interactive elements:: DRY/SOLID
-
+//Caching DOM ELEMENTS to enhance Performance: re-usable core features/interactive elements:: DRY/SOLID
 
 //setting defaults - Initialisation
 let userScore = 0;
@@ -27,6 +24,7 @@ function getComputerChoice(){
 		const choices = ['r', 'p', 's'];
 		//Build a random function and floor ot to get atomic numbers
 		//console.log(Math.random() * 3)
+		//Ensuring ATOMICITY
 		//console.log(Math.floor(Math.random() * 3));
 		const randomNumber = Math.floor(Math.random() * 3);
 		return choices[randomNumber];
@@ -61,8 +59,6 @@ function lose(userChoice, computerChoice){
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
-
-//Refactored to use template strings from es6
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to   ${convertToWord(computerChoice)}${smallCompWord}. You lost...==)`;
 }
 
@@ -73,8 +69,6 @@ function draw(userChoice, computerChoice){
 	userScore++;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
-
-	//Refactored to use template strings from es6
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!!`;
 }
 
@@ -95,7 +89,7 @@ function game(userChoice){
 		break;
 
 		//USER LOSES(computer wins) - note opposites of USER combinations
-		//case values registered here are  listed for each ierative option above - ALGORITHM MATRIX
+		//case values registered here are  listed for each iterative option above - ALGORITHM MATRIX
 		case "rp":
 		case "ps":
 		case "sr":
@@ -109,9 +103,7 @@ function game(userChoice){
 		//console.log("It's a DRAW.")
 		draw(userChoice, computerChoice);
 		break;
-
 	}
-
 }
 
 //Firing event listeners
