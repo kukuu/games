@@ -44,7 +44,7 @@ function win(){
 }
 
 
-function LOSE(){
+function lose(){
 	console.log("LOST");
 }
 
