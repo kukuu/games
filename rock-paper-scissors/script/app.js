@@ -6,14 +6,14 @@
 //CACHING DOM ELEMENTS
 
 //setting defaults - Initialisation
-const userScore = 0;
-const computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 
 //Scores
 const userScore_span = document.getElementById('user-score');
 const computerScore_span = document.getElementById('computer-score');
 const scoreBoard_div = document.querySelector('.score-board');
-const result_div = document.querySelector('.result');
+const result_p = document.querySelector('.result > p');
 
 //domain propeeties (ROCK, PAPER, SCISSORS)
 const rock_div = document.getElementById('r');
@@ -33,6 +33,28 @@ function getComputerChoice(){
 
 //console.log(getComputerChoice());
 
+
+function win(){
+	userScore++
+	//console.log(userScore);
+	//console.log("WIN");
+	userScore_span.innerHTML = userScore;
+	computerScore_span.innerHTML = computerScore;
+	result_p.innerHTML = userScore + " beats " + computerChoice +  ". You win $$$££!"
+}
+
+
+function LOSE(){
+	console.log("LOST");
+}
+
+
+function draw(){
+	console.log("DRAW");
+}
+
+
+
 //Evaluate game()
 function game(userChoice){
 	//console.log('):  ):   ): ' + userChoice)
@@ -47,8 +69,8 @@ function game(userChoice){
 		case "rs":
 		case "pr":
 		case "sp":
-		console.log("USER WINS.")
-		//win();
+		//console.log("USER WINS.")
+		win();
 		break;
 
 		//USER LOSES(computer wins) - note opposites of USER combinations
@@ -56,16 +78,16 @@ function game(userChoice){
 		case "rp":
 		case "ps":
 		case "sr":
-		console.log("USER LOSES");
-		//lose();
+		//console.log("USER LOSES");
+		lose();
 		break;
 
 		//Draws - ALGORITHM
 		case "rr":
 		case "pp":
 		case "ss":
-		console.log("It's a DRAW.")
-		//draw();
+		//console.log("It's a DRAW.")
+		draw();
 		break;
 
 	}
