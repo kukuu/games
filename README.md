@@ -1,8 +1,10 @@
 # Games
 
-Open source programming and GAMES.
+Using Open Source programming to build games.
 
-## Beat the Computer!
+## Vanilla JavaScript
+
+### Beat the Computer!
 
 This is  a web application GAME - Rock, Paper, Scissors, using vanilla JavaScript with best practices. Including es6 and some new  JavaScript API objects.
 
