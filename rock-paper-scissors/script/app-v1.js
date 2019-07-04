@@ -1,6 +1,3 @@
-//Author: Alexander Adu-Sarkodie
-//Vanilla JavaScript orchestrated Rock, Paper , Scissors game
-
 //console.log("Hey");
 
 //Enhancing Performance: Caching properties and DOM elements::DRY/SOLID
@@ -34,63 +31,26 @@ function getComputerChoice(){
 		return choices[randomNumber];
 }
 
-//getComputerChoice();
-
 //console.log(getComputerChoice());
 
 
-//Helper function: Converting to output  Array list r,p,s to words.
-
-function convertToWord(letter){
-	if(letter === "r") return "Rock";
-	if(letter === "p") return "Paper";
-	else{return "Scissors"};
-	
-}
-
-
-function win(userChoice, computerChoice){
-	userScore++;
+function win(){
+	userScore++
 	//console.log(userScore);
 	//console.log("WIN");
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-
-	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats   ${convertToWord(computerChoice)}${smallCompWord}.  You win (==)`;
+	result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
 }
 
 
-function lose(userChoice, computerChoice){
-	computerScore++;
-	//console.log(computerScore);
-	//console.log("LOST");
-	userScore_span.innerHTML = userScore;
-	computerScore_span.innerHTML = computerScore;
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-
-	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to   ${convertToWord(computerChoice)}${smallCompWord}. You lost...==)`;
-
-	//console.log("LOST");
+function lose(){
+	console.log("LOST");
 }
 
 
-function draw(userChoice, computerChoice){
-	
-	userScore++;
-	const smallUserWord = "user".fontsize(3).sup();
-	const smallCompWord = "comp".fontsize(3).sup();
-
-	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!!`;
-
-	
-
-	//console.log("DRAW");
+function draw(){
+	console.log("DRAW");
 }
 
 
@@ -110,7 +70,7 @@ function game(userChoice){
 		case "pr":
 		case "sp":
 		//console.log("USER WINS.")
-		win(userChoice, computerChoice);
+		win();
 		break;
 
 		//USER LOSES(computer wins) - note opposites of USER combinations
@@ -119,7 +79,7 @@ function game(userChoice){
 		case "ps":
 		case "sr":
 		//console.log("USER LOSES");
-		lose(userChoice, computerChoice);
+		lose();
 		break;
 
 		//Draws - ALGORITHM
@@ -127,7 +87,7 @@ function game(userChoice){
 		case "pp":
 		case "ss":
 		//console.log("It's a DRAW.")
-		draw(userChoice, computerChoice);
+		draw();
 		break;
 
 	}
