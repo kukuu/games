@@ -40,7 +40,7 @@ function win(){
 	//console.log("WIN");
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
-	result_p.innerHTML = userScore + " beats " + computerChoice +  ". You win $$$££!"
+	result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
 }
 
 
