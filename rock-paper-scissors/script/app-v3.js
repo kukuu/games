@@ -3,8 +3,10 @@
 
 //console.log("Hey");
 
-//Caching DOM ELEMENTS to enhance Performance: re-usable Core properties/interactive elements:: DRY/SOLID
+//Enhancing Performance: Caching properties and DOM elements::DRY/SOLID
 
+
+//CACHING DOM ELEMENTS
 
 //setting defaults - Initialisation
 let userScore = 0;
@@ -16,7 +18,7 @@ const computerScore_span = document.getElementById('computer-score');
 const scoreBoard_div = document.querySelector('.score-board');
 const result_p = document.querySelector('.result > p');
 
-//domain features (ROCK, PAPER, SCISSORS)
+//domain propeeties (ROCK, PAPER, SCISSORS)
 const rock_div = document.getElementById('r');
 const paper_div = document.getElementById('p');
 const scissors_div = document.getElementById('s');
@@ -32,8 +34,13 @@ function getComputerChoice(){
 		return choices[randomNumber];
 }
 
+//getComputerChoice();
 
-//Helper function: Converting  Array list [r,p,s] to words.
+//console.log(getComputerChoice());
+
+
+//Helper function: Converting to output  Array list r,p,s to words.
+
 function convertToWord(letter){
 	if(letter === "r") return "Rock";
 	if(letter === "p") return "Paper";
@@ -42,67 +49,80 @@ function convertToWord(letter){
 }
 
 
-//WIN
 function win(userChoice, computerChoice){
 	userScore++;
+	//console.log(userScore);
+	//console.log("WIN");
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
-//Refactored to use template strings from es6
+
+	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats   ${convertToWord(computerChoice)}${smallCompWord}.  You win (==)`;
 }
 
 
-//LOSE
 function lose(userChoice, computerChoice){
 	computerScore++;
+	//console.log(computerScore);
+	//console.log("LOST");
 	userScore_span.innerHTML = userScore;
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 
-//Refactored to use template strings from es6
+	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to   ${convertToWord(computerChoice)}${smallCompWord}. You lost...==)`;
+
+	//console.log("LOST");
 }
 
 
-//DRAW
 function draw(userChoice, computerChoice){
 	
 	userScore++;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 
-	//Refactored to use template strings from es6
+	//result_p.innerHTML = userChoice + " beats " + computerChoice +  ". You win $$$££!"
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!!`;
+
+	
+
+	//console.log("DRAW");
 }
 
 
 
-//HIGHER ORDER FUNCTION:: game() => Encapsulates and serves as Interface []
-//getComputerChoice(), win(), draw() and lose()
+//Evaluate game()
 function game(userChoice){
+	//console.log('):  ):   ): ' + userChoice)
 
 	const computerChoice = getComputerChoice();
 
+	//console.log('user choice => ' + userChoice);
+	//console.log('computer choice => ' + computerChoice);
+
 	switch(userChoice + computerChoice){
-		//combinations of user  WINS - ALGORITHM MATRIX
+		//combinations of user  WINS - ALGORITHM
 		case "rs":
 		case "pr":
 		case "sp":
+		//console.log("USER WINS.")
 		win(userChoice, computerChoice);
 		break;
 
 		//USER LOSES(computer wins) - note opposites of USER combinations
-		//case values registered here are  listed for each ierative option above - ALGORITHM MATRIX
+		//Not listed for each ierative option above - ALGORITHM
 		case "rp":
 		case "ps":
 		case "sr":
+		//console.log("USER LOSES");
 		lose(userChoice, computerChoice);
 		break;
 
-		//Draws - ALGORITHM MATRIX
+		//Draws - ALGORITHM
 		case "rr":
 		case "pp":
 		case "ss":
@@ -114,21 +134,24 @@ function game(userChoice){
 
 }
 
-//Firing event listeners
+//game('c');
+
 function main(){
 
 	//Add Event Listeners to the entities ROCK,PAPER, SCISSORS
 	rock_div.addEventListener('click', () => {
 		//console.log('Hey you clicked on rock');
-		game("r"); //Execute and reference rock signature with ref. to game() function
+		game("r"); //Execute rock signature with ref. to game() function
 	})
 
 	paper_div.addEventListener('click', () => {
-		game("p"); //EExecute and reference paper signature
+		//console.log('Hey you clicked on paper');
+		game("p"); //Execute paper signature
 	})
 
 	scissors_div.addEventListener('click', () => {
-		game("s"); //Execute and reference  scissors signature
+		//console.log('Hey you clicked on scissors');
+		game("s"); //Execute scissors signature
 	})
 }
 
