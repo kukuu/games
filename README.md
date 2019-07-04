@@ -6,7 +6,7 @@ Using Open Source programming to build games.
 
 ### Beat the Computer!
 
-This is  a web application GAME - Rock, Paper, Scissors, using vanilla JavaScript with best practices. Including es6 and some new  JavaScript API objects.
+This is  a web application GAME - Rock, Paper, Scissors, using vanilla JavaScript with some of its best practices. Including es6 and some new  JavaScript API objects.
 
 This game has been engineered to be played against the Computer. 
 
