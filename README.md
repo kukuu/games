@@ -14,6 +14,6 @@ You can read more on the game from here - https://en.wikipedia.org/wiki/Rock–p
 
 Note, the semantics  in descriptive names of the caching variables for the DOM elements.
 
-The application's JavaScript document is versioned, and documented to reflect the iterations going on in building the application (app.js[main], ap-v1.js, ap-v2.js etc....).
+The application's JavaScript document is versioned, and documented to reflect the iterations going on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js etc....).
 
 Enjoy!
