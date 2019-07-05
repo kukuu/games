@@ -49,6 +49,11 @@ function win(userChoice, computerChoice){
 	const smallCompWord = "comp".fontsize(3).sup();
 //Refactored to use template strings from es6
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats   ${convertToWord(computerChoice)}${smallCompWord}.  You win (==)`;
+// Enhancing user experience with glow effect
+	document.getElementById(userChoice).classList.add('green-glow');
+	//Adding set timeout to remove the glow border. Avoid persistence
+	//setTimeout(function(){console.log("Hello")}, 1000);
+	setTimeout(function(){document.getElementById(userChoice).classList.remove('green-glow')}, 1000);
 }
 
 
