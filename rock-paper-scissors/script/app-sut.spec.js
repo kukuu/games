@@ -1,25 +1,22 @@
-//1. Rock, Paper, Scissors unit-test with Mocha Framework and Chai assertion library
-
-//Test suits
+//Test suites
 //SMOKE TEST
 // draw
 //user wins
 //comp wins
 
-//user wins combination option= 
+//user wins: algorithm combination
 // r and s
 // p and r
 // s and p
 
 
-//comp wins combination  options
+//comp wins: algorithm combination
 // user loses to comp
 //r and  p
 //p and s
 //s and r
 
-//draw
-//Options
+//draw: algorithm combination
 // r and r
 // p and p
 // s and s
@@ -88,4 +85,3 @@ describe.only('rockPaperScissors', () => {
 	});
 
 });
-
