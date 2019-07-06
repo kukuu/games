@@ -16,4 +16,14 @@ Note, the semantics  in descriptive names of the caching variables for the DOM e
 
 The application's JavaScript document is versioned, and documented to reflect the iterations going on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js etc....).
 
+## Unit Test
+1. Mocha Framework
+2. Gulp Test Runner
+3. Chai Assertion Library
+4. Test suites:
+-  SMOKE test
+- "draw".
+- "user" wins.
+- "comp" (Computer) wins.
+
 Enjoy!
