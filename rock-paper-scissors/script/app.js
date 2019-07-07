@@ -47,13 +47,17 @@ function win(userChoice, computerChoice){
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
+	const userChoice_div = document.getElementById(userChoice);
 //Refactored to use template strings from es6
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats   ${convertToWord(computerChoice)}${smallCompWord}.  You win (==)`;
 // Enhancing user experience with glow effect
-	document.getElementById(userChoice).classList.add('green-glow');
+	//document.getElementById(userChoice).classList.add('green-glow');
+	userChoice_div.classList.add('green-glow');
 	//Adding set timeout to remove the glow border. Avoid persistence
 	//setTimeout(function(){console.log("Hello")}, 1000);
-	setTimeout(function(){document.getElementById(userChoice).classList.remove('green-glow')}, 1000);
+	//setTimeout(function(){document.getElementById(userChoice).classList.remove('green-glow')}, 1000);
+	//setTimeout(function(){userChoice_div.classList.remove('green-glow')}, 1000);
+	setTimeout(() => userChoice_div.classList.remove('green-glow'), 1000);
 }
 
 
@@ -64,17 +68,26 @@ function lose(userChoice, computerChoice){
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
+	const userChoice_div = document.getElementById(userChoice);
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to   ${convertToWord(computerChoice)}${smallCompWord}. You lost...==)`;
+	//refactored
+	//document.getElementById(userChoice).classList.add('green-glow');
+	userChoice_div.classList.add('red-glow');
+	//setTimeout(function(){userChoice_div.classList.remove('red-glow')}, 300);
+	setTimeout(() => userChoice_div.classList.remove('red-glow'), 1000);
 }
 
 
 //DRAW
 function draw(userChoice, computerChoice){
-	
 	userScore++;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
+	const userChoice_div = document.getElementById(userChoice);
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(computerChoice)}${smallCompWord}. Its a draw!!`;
+	userChoice_div.classList.add('gray-glow');
+	//setTimeout(function(){userChoice_div.classList.remove('gray-glow')}, 300);
+	setTimeout(() => userChoice_div.classList.remove('gray-glow'), 1000);
 }
 
 
@@ -114,19 +127,11 @@ function game(userChoice){
 //Firing event listeners
 function main(){
 
-	//Add Event Listeners to the entities ROCK,PAPER, SCISSORS
-	rock_div.addEventListener('click', () => {
-		//console.log('Hey you clicked on rock');
-		game("r"); //Execute and reference rock signature with ref. to game() function
-	})
+	rock_div.addEventListener('click', () => game("r"));
 
-	paper_div.addEventListener('click', () => {
-		game("p"); //EExecute and reference paper signature
-	})
+	paper_div.addEventListener('click', () => game("p"));
 
-	scissors_div.addEventListener('click', () => {
-		game("s"); //Execute and reference  scissors signature
-	})
+	scissors_div.addEventListener('click', () => game("s"))
 }
 
 //Run parent function
