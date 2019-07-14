@@ -42,6 +42,7 @@ function convertToWord(letter){
 //WIN
 function win(userChoice, computerChoice){
 	userScore++;
+	//computerScore is inactive here.
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 	const userChoice_div = document.getElementById(userChoice);
@@ -60,6 +61,7 @@ function win(userChoice, computerChoice){
 //LOSE
 function lose(userChoice, computerChoice){
 	computerScore++;
+	//userScore is inactive here.
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 	const userChoice_div = document.getElementById(userChoice);
