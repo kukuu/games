@@ -15,5 +15,6 @@ module.exports = function(user, comp){
 	}
 
 	return false;
-	//retur 'comp' //When computer wins
+	//return 'comp' 
+	//When computer wins
 }
