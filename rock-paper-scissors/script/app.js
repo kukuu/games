@@ -75,7 +75,6 @@ function lose(userChoice, computerChoice){
 
 //DRAW
 function draw(userChoice, computerChoice){
-	userScore++;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 	const userChoice_div = document.getElementById(userChoice);
