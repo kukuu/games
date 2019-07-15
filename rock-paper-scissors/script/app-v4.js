@@ -50,7 +50,7 @@ function win(userChoice, computerChoice){
 	const userChoice_div = document.getElementById(userChoice);
 //Refactored to use template strings from es6
 	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats   ${convertToWord(computerChoice)}${smallCompWord}.  You win (==)`;
-// Enhancing user experience with glow effect
+// Enhancing user experience with glow effect. Run time decoration
 	//document.getElementById(userChoice).classList.add('green-glow');
 	userChoice_div.classList.add('green-glow');
 	//Adding set timeout to remove the glow border. Avoid persistence
