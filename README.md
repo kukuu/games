@@ -48,6 +48,13 @@ The application's JavaScript document is versioned, and documented to reflect th
 ```
 6. To execute test script: npm run test
 
+
+## Extended test
+
+1. https://github.com/kukuu/unittests/tree/master/mocha-chai/test 
+
+2. Requires Gulp, Mocha and Chai(npm install --save-dev).
+
 ## Code Review tips
 
 1. SOLID: Does the code follow SOLID principles?
