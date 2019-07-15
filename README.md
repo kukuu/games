@@ -14,17 +14,39 @@ You can read more on the game from here - https://en.wikipedia.org/wiki/Rock–p
 
 Note, the semantics  in descriptive names of the caching variables for the DOM elements.
 
-The application's JavaScript document is versioned, and documented to reflect the iterations which went on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js,  ap-v4.js,  ap-v5.js).
+The application's JavaScript document is versioned, and documented to reflect the iterations which went on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js,  ap-v4.js,  ap-v5.js). This is done for tutorial, coaching and learning purposes, and has substantial comments. The final output (app.js)is optimised. This MUST be understood.
 
 ## Unit Test
 1. Mocha Framework
-2. Gulp Test Runner
-3. Chai Assertion Library
+2. Chai Assertion Library
 4. Test suites:
--  SMOKE test
 - "draw".
 - "user" wins.
 - "comp" (Computer) wins.
+5. package.json
+
+```
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "Mocha Chai NodeJS ",
+  "main": "appsRPS.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "author": "Alexander Adu-Sarkodie",
+  "license": "ISC"
+}
+
+```
+6. To execute test script: npm run test
 
 ## Code Review tips
 
