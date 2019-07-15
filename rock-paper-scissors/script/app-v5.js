@@ -4,6 +4,7 @@
 //Caching DOM ELEMENTS to enhance Performance: re-usable core features/interactive elements:: DRY/SOLID
 
 //setting defaults - Initialisation
+//Global variables
 let userScore = 0;
 let computerScore = 0;
 
@@ -42,9 +43,9 @@ function convertToWord(letter){
 
 //WIN
 function win(userChoice, computerChoice){
-	userScore++;
+	userScore++;//global variable
 	userScore_span.innerHTML = userScore;
-	computerScore_span.innerHTML = computerScore;
+	computerScore_span.innerHTML = computerScore;//Unchanged
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
 	const userChoice_div = document.getElementById(userChoice);
@@ -63,8 +64,8 @@ function win(userChoice, computerChoice){
 
 //LOSE
 function lose(userChoice, computerChoice){
-	computerScore++;
-	userScore_span.innerHTML = userScore;
+	computerScore++; //global variable
+	userScore_span.innerHTML = userScore;//Unchanged
 	computerScore_span.innerHTML = computerScore;
 	const smallUserWord = "user".fontsize(3).sup();
 	const smallCompWord = "comp".fontsize(3).sup();
