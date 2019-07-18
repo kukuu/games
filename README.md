@@ -77,4 +77,6 @@ The application's JavaScript document is versioned, and documented to reflect th
 
 10. Using modern syntaxes (ES6): Arrow functions, default parameters, block scoping, template strings, spread operators, generator functions, destructuring etc
 
+11. Look out for null values. Where exceptions are needed.
+
 Enjoy!
