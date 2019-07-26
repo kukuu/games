@@ -69,7 +69,7 @@ The application's JavaScript document is versioned, and documented to reflect th
 
 6. Test coverage: Is there a test for this code?
 
-7. Race conditions: Any global polution? Leakages?
+7. Race conditions: Any global polution? Leakages? Managing callbacks and side effects.
 
 8. Design patterns: What design patterns are used in the new code? Any anti-patterns (in loops etc)
 
