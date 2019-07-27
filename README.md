@@ -4,7 +4,7 @@ Using Open Source programming to build games.
 
 ## Vanilla JavaScript
 
-### Beat the Computer!
+###  Rock, Paper & Scissors - Beat the Computer!
 
 This is  a web application GAME - Rock, Paper & Scissors, using vanilla JavaScript with some of its best practices. Including es6 and some new  JavaScript API objects.
 
@@ -16,7 +16,7 @@ Note, the semantics  in descriptive names of the caching variables for the DOM e
 
 The application's JavaScript document is versioned, and documented to reflect the iterations which went on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js,  ap-v4.js,  ap-v5.js). This is done for tutorial, coaching and learning purposes, and has substantial comments. The final output (app.js)is optimised. This MUST be understood.
 
-## Unit Test
+#### Unit Test
 1. Mocha Framework
 2. Chai Assertion Library
 4. Test suites:
@@ -49,13 +49,22 @@ The application's JavaScript document is versioned, and documented to reflect th
 6. To execute test script: npm run test
 
 
-## Extended test
+#### Extended test
 
 1. https://github.com/kukuu/unittests/tree/master/mocha-chai/test 
 
 2. Requires Gulp, Mocha and Chai(npm install --save-dev).
 
-## Code Review tips
+
+### FizzBuzz
+
+https://github.com/kukuu/siliconlabs/blob/master/fizzBuzz/fizzbuzz.md 
+
+### JavaScript Algorithms 
+
+https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038
+
+### Code Review tips
 
 1. SOLID: Does the code follow SOLID principles?
 
@@ -78,12 +87,3 @@ The application's JavaScript document is versioned, and documented to reflect th
 10. Using modern syntaxes (ES6): Arrow functions, default parameters, block scoping, template strings, spread operators, generator functions, destructuring etc
 
 11. Look out for null values. Where exceptions are needed.
-
-## FizzBuzz
-
-https://github.com/kukuu/siliconlabs/blob/master/fizzBuzz/fizzbuzz.md 
-
-## JavaScript Algorithms 
-
-https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038
-
