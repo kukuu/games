@@ -1,4 +1,4 @@
-# Games
+# Games and Algorithms
 
 Using Open Source programming to build games.
 
@@ -79,4 +79,11 @@ The application's JavaScript document is versioned, and documented to reflect th
 
 11. Look out for null values. Where exceptions are needed.
 
-Enjoy!
+## FizzBuzz
+
+https://github.com/kukuu/siliconlabs/blob/master/fizzBuzz/fizzbuzz.md 
+
+## JavaScript Algorithms 
+
+https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038
+
