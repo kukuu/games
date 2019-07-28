@@ -1,8 +1,6 @@
-# Games and Algorithms
+# Games and Algorithms with  JavaScript
 
-Using Open Source programming to build games.
-
-## Vanilla JavaScript
+https://github.com/kukuu/games-and-algorithms/blob/master/algorithms/algorithms.md
 
 ###  Rock, Paper & Scissors - Beat the Computer!
 
