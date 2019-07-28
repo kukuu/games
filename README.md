@@ -1,4 +1,4 @@
-# Games and Algorithms with  JavaScript
+# Games and Algorithms
 
 https://github.com/kukuu/games-and-algorithms/blob/master/algorithms/algorithms.md
 
