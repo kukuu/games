@@ -10,23 +10,23 @@ Since this can compromise privacy (GDPR), the position is not available unless t
 
 The getCurrentPosition() method returns an object on success. The latitude, longitude and accuracy properties are always returned. The other properties are returned if available:
 
-Property	               Returns
+Property	               ::             Returns
 
-coords.latitude	           The latitude as a decimal number (always returned)
+coords.latitude	           ::             The latitude as a decimal number (always returned)
 
-coords.longitude	       The longitude as a decimal number (always returned)
+coords.longitude	       ::             The longitude as a decimal number (always returned)
 
-coords.accuracy	           The accuracy of position (always returned)
+coords.accuracy	           ::             The accuracy of position (always returned)
 
-coords.altitude	           The altitude in meters above the mean sea level (returned if available)
+coords.altitude	           ::             The altitude in meters above the mean sea level (returned if available)
 
-coords.altitudeAccuracy	   The altitude accuracy of position (returned if available)
+coords.altitudeAccuracy	   ::             The altitude accuracy of position (returned if available)
 
-coords.heading	           The heading as degrees clockwise from North (returned if available)
+coords.heading	           ::             The heading as degrees clockwise from North (returned if available)
 
-coords.speed	           The speed in meters per second (returned if available)
+coords.speed	           ::             The speed in meters per second (returned if available)
 
-timestamp	               The date/time of the response (returned if available)
+timestamp	               ::             The date/time of the response (returned if available)
 
 
 
