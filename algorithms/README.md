@@ -1,4 +1,4 @@
-# Writng Algorithms
+# Writing Algorithms
 
 Applied to code, an algorithm is just a function that transforms a certain input data structure into a certain output data structure. The logic inside decides the transformation.
 
@@ -65,3 +65,18 @@ Brute-Force Searching: O(n)
 Optimized Searching: O(log n)
 
 ```
+
+
+### Iterations
+
+Intimately associated with Arrays is iterating through them using loops. In JavaScript, we can use five different control structures for iterations. 
+
+The most customizable is the **for loop**, which we can use to iterate through array indexes in almost any order. 
+
+If the number of iterations cannot be determined, we can use while and **do while**  loops until a certain condition is met. 
+
+For any object, we can use the **for in** and **for of** loops to iterate through its keys and values, respectively. To get both simultaneously, we can loop through its **entries()** .
+
+We can also break out of a loop at any time using a **break** statement, or skip ahead to the next iteration using a **continue** statement. 
+
+For the most control, iterating through **generator** functions is the best.
