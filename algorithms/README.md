@@ -33,3 +33,35 @@ Factorial: O(n!)
 
 ```
  
+## Design structure of Algorithms
+
+### Arrays
+Arguably the most important inherent standard object used in algorithms. In JavaScript, no other object has more utility methods than arrays. 
+
+Array elements are inserted beginning at the 0th index. This means the last element is at array.length — 1. Arrays are the most optimal for indexing (pushing), but can be terrible at inserting, deleting (not popping), and searching. 
+
+Array methods worth remembering are: 
+
+```
+i. sort
+ii. reverse
+iii. slice
+iv. splice. 
+
+```
+
+In JavaScript, arrays can grow dynamically. Namely:
+
+```
+
+Indexing: O(1)
+
+Inserting: O(n)
+
+Deleting: O(n)
+
+Brute-Force Searching: O(n)
+
+Optimized Searching: O(log n)
+
+```
