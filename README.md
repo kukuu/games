@@ -69,7 +69,7 @@ https://www.gcflcm.com/lcm-of-24-and-36
 
 ### Code Review tips
 
-### Functional
+#### Functional
 
 1. SOLID: Does the code follow SOLID principles?
 
@@ -118,7 +118,7 @@ One should "depend upon abstractions, concretions."
 
 15. Optimisation in multi-threaded code
 
-### Security
+#### Security
 
 Attacks and vulnerabilities
 
@@ -130,9 +130,9 @@ Attacks and vulnerabilities
 
 4. CSRF - Cross Site Request Forgery (use CSRF token implementation )
 
-5.CORS
+5. CORS
 
-#### Tools
+##### Tools
 
 1. Morgan - for logging vulnerabilities
 
