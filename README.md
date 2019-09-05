@@ -65,7 +65,12 @@ https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038
 
 ### lowest common multiple
 
-https://www.gcflcm.com/lcm-of-24-and-36
+https://www.gcflcm.com/lcm-of-24-and-36 
+
+
+### Filter list in  Python
+https://github.com/kukuu/python/blob/master/filter-list
+
 
 ### Code Review tips
 
