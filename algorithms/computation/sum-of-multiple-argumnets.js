@@ -54,6 +54,7 @@ add(2)(3);*/
 //         return x + y;
 //     };
 // }
+//add(4)(5)
 
 
 // const sum = (...args) => [...args].reduce((a,b) => a + b, 0)
@@ -61,7 +62,7 @@ add(2)(3);*/
 // var x = add(2)(3)
 
 // var add = function(x){
-// 	refturn function(y){
+// 	return function(y){
 // 		return x + y ;
 // 	}
 // }
