@@ -25,5 +25,5 @@ function  fib(n){
 	return arr[n]
 }
 
-fib(4)//will return 33
+fib(4)//will return 3
 ```
