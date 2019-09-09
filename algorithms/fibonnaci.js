@@ -7,6 +7,8 @@
 // 3 => [0,1,1]
 // 8 => [0,1,1,2,3,5,8,13]
 
+// linear Solution
+
 function fb(n) {
   //[0,1, 1, 2, 3, 5, 8]
 
@@ -18,6 +20,4 @@ function fb(n) {
   console.log(nums);
   return nums[n - 1];
 }
-
-// linear
-//expo: n poer 2
+//recursion would turn it expoential  and could take longer to execute
