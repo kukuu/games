@@ -10,7 +10,7 @@ Can helper functions be extracted or abstracted? An algorithm usually needs to b
 
 Finally, think about re-factoring and modularising at a stage
 
-https://github.com/kukuu/algorithms/tree/master/algorithms
+Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
 ### Shallow and Deep clones
 
