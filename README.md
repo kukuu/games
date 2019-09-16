@@ -1,8 +1,8 @@
-# Games and Algorithms
+# Algorithms
 
 https://github.com/kukuu/games-and-algorithms/blob/master/algorithms/algorithms.md
 
-###  Rock, Paper & Scissors - Beat the Computer!
+###  Game: Rock, Paper & Scissors - Beat the Computer!
 
 This is  a web application GAME - Rock, Paper & Scissors, using vanilla JavaScript with some of its best practices. Including es6 and some new  JavaScript API objects.
 
@@ -14,7 +14,7 @@ Note, the semantics  in descriptive names of the caching variables for the DOM e
 
 The application's JavaScript document is versioned, and documented to reflect the iterations which went on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js,  ap-v4.js,  ap-v5.js). This is done for tutorial, coaching and learning purposes, and has substantial comments. The final output (app.js)is optimised. This MUST be understood.
 
-##### Unit Test
+### Unit Test
 1. Mocha Framework
 2. Chai Assertion Library
 4. Test suites:
@@ -78,7 +78,9 @@ i. https://github.com/kukuu/microservices-nodejs-docker-nginx/blob/master/search
 
 ii. https://github.com/kukuu/secure-restful-react-redux-web-app/blob/master/bookworm/bookworm-react/src/api.js
 
+### Shallow and Deep clones
 
+### Working with DEFAULT parameters - Old to new school
 
 ### Code Review tips
 
