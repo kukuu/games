@@ -8,7 +8,7 @@ Once the problem domain is thoroughly grasped, brainstorming of the solution spa
 
 Can helper functions be extracted or abstracted? An algorithm usually needs to be scalable. As input sizes grow, how will the function perform? Should there be some kind of caching mechanisms? Generally, memory optimizations (space) will need to be sacrificed for performance gains (time).
 
-Finally, think about re-factoring and modularising at a stage
+Finally, think about re-factoring and modularising at a stage.
 
 Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
@@ -16,7 +16,7 @@ Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
 https://github.com/kukuu/algorithms/tree/master/algorithms/copy-clone
 
-### Working with DEFAULT parameters - moving waway from OLD to NEW school
+### Working with DEFAULT parameters - moving away from OLD to NEW school
 
 https://github.com/kukuu/algorithms/blob/master/algorithms/es6/default-params/default-params.md
 
