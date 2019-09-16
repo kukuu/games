@@ -1,6 +1,27 @@
 # Algorithms
 
-https://github.com/kukuu/games-and-algorithms/blob/master/algorithms/algorithms.md
+https://github.com/kukuu/algorithms/tree/master/algorithms
+
+### Shallow and Deep clones
+
+https://github.com/kukuu/algorithms/tree/master/algorithms/copy-clone
+
+### Working with DEFAULT parameters - moving waway from OLD to NEW school
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/es6/default-params/default-params.md
+
+### Fibonacci
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/fibonacci.md 
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/fibonnaci.js
+
+
+### Anagrams
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/anagram.md 
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/anagrams.test.js
 
 ###  Game: Rock, Paper & Scissors - Beat the Computer!
 
@@ -77,10 +98,6 @@ i. https://github.com/kukuu/microservices-nodejs-docker-nginx/blob/master/search
 
 
 ii. https://github.com/kukuu/secure-restful-react-redux-web-app/blob/master/bookworm/bookworm-react/src/api.js
-
-### Shallow and Deep clones
-
-### Working with DEFAULT parameters - Old to new school
 
 ### Code Review tips
 
