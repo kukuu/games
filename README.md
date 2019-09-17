@@ -115,6 +115,12 @@ i. https://github.com/kukuu/microservices-nodejs-docker-nginx/blob/master/search
 
 ii. https://github.com/kukuu/secure-restful-react-redux-web-app/blob/master/bookworm/bookworm-react/src/api.js
 
+
+### Hashing password with bcrypt
+
+https://github.com/kukuu/siliconlabs/blob/master/bcrypt
+
+
 ### Code Review tips
 
 #### Functional
