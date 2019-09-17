@@ -33,6 +33,12 @@ https://github.com/kukuu/algorithms/blob/master/algorithms/anagram.md
 
 https://github.com/kukuu/algorithms/blob/master/algorithms/anagrams.test.js
 
+### map
+
+https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/REACT/standard.jsx 
+
+https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/all/index.html 
+
 ###  Game: Rock, Paper & Scissors - Beat the Computer!
 
 This is  a web application GAME - Rock, Paper & Scissors, using vanilla JavaScript with some of its best practices. Including es6 and some new  JavaScript API objects.
