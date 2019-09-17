@@ -27,17 +27,25 @@ https://github.com/kukuu/algorithms/blob/master/algorithms/fibonacci.md
 https://github.com/kukuu/algorithms/blob/master/algorithms/fibonnaci.js
 
 
+### map, filter , reduce
+
+https://github.com/kukuu/javascript/tree/master/map-filter-reduce
+
+https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/REACT/standard.jsx 
+
+https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/all/index.html 
+
+### Counter
+
+https://github.com/kukuu/javascript/blob/master/counter/counter.jsx 
+
+https://github.com/kukuu/javascript/blob/master/counter/index.html
+
 ### Anagrams
 
 https://github.com/kukuu/algorithms/blob/master/algorithms/anagram.md 
 
 https://github.com/kukuu/algorithms/blob/master/algorithms/anagrams.test.js
-
-### map
-
-https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/REACT/standard.jsx 
-
-https://github.com/kukuu/Apps-WebServices/blob/master/axios/examples/all/index.html 
 
 ###  Game: Rock, Paper & Scissors - Beat the Computer!
 
@@ -50,6 +58,14 @@ You can read more on the game from here - https://en.wikipedia.org/wiki/Rock–p
 Note, the semantics  in descriptive names of the caching variables for the DOM elements.
 
 The application's JavaScript document is versioned, and documented to reflect the iterations which went on in building the application (app.js[main], ap-v1.js, ap-v2.js, ap-v3.js,  ap-v4.js,  ap-v5.js). This is done for tutorial, coaching and learning purposes, and has substantial comments. The final output (app.js)is optimised. This MUST be understood.
+
+
+### EJS Templating in Node.js Application
+
+https://github.com/kukuu/javascript/tree/master/ejs/routes 
+
+https://github.com/kukuu/javascript/blob/master/ejs/server.js
+
 
 ### Unit Test
 1. Mocha Framework
