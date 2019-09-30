@@ -47,6 +47,10 @@ https://github.com/kukuu/algorithms/blob/master/algorithms/anagram.md
 
 https://github.com/kukuu/algorithms/blob/master/algorithms/anagrams.test.js
 
+### Data Structures 
+
+https://www.freecodecamp.org/news/the-top-data-structures-you-should-know-for-your-next-coding-interview-36af0831f5e3/
+
 ###  Game: Rock, Paper & Scissors - Beat the Computer!
 
 This is  a web application GAME - Rock, Paper & Scissors, using vanilla JavaScript with some of its best practices. Including es6 and some new  JavaScript API objects.
