@@ -61,7 +61,7 @@ Intimately associated with Arrays is iterating through them using loops. In Java
 
 The most customizable is the **for loop**, which we can use to iterate through array indexes in almost any order. 
 
-**forEach(**) executes a provided function once for each array element. It throws away return values and always returns undefined . forEach() will allow a callback function to mutate the current array. This callback is allowed to mutate the calling array.
+**forEach(**) executes a provided function once for each array element. It throws away return values and always returns undefined . forEach() will allow a callback function. This callback is allowed to mutate the calling array.
 
 **map()** creates a new array with the results of calling a provided function on every element in the calling array, and will instead return a new array. It allocates memory and stores return values.
 
