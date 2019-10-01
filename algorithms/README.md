@@ -61,6 +61,12 @@ Intimately associated with Arrays is iterating through them using loops. In Java
 
 The most customizable is the **for loop**, which we can use to iterate through array indexes in almost any order. 
 
+**forEach(**) executes a provided function once for each array element. It throws away return values and always returns undefined . forEach() will allow a callback function to mutate the current array. This callback is allowed to mutate the calling array.
+
+**map()** creates a new array with the results of calling a provided function on every element in the calling array, and will instead return a new array. It allocates memory and stores return values.
+
+https://codeburst.io/javascript-map-vs-foreach-f38111822c0f
+
 If the number of iterations cannot be determined, we can use while and **do while**  loops until a certain condition is met. 
 
 For any object, we can use the **for in** and **for of** loops to iterate through its keys and values, respectively. To get both simultaneously, we can loop through its **entries()** .
@@ -68,3 +74,5 @@ For any object, we can use the **for in** and **for of** loops to iterate throug
 We can also break out of a loop at any time using a **break** statement, or skip ahead to the next iteration using a **continue** statement. 
 
 For the most control, iterating through **generator** functions is the best.
+
+
