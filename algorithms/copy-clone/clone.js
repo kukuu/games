@@ -32,7 +32,7 @@ var employeeDetailsOriginal = {  name: 'Luca', age: 25, Profession: 'Software En
 
 var employeeDetailsDuplicate = (keepCloning(employeeDetailsOriginal));
 
-employeeDetailsOriginal.name = "Alex";
+employeeDetailsOriginal.name = "Morgan";
 
 console.log(employeeDetailsOriginal);
 console.log(employeeDetailsDuplicate);
