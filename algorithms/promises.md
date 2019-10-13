@@ -1,10 +1,12 @@
-# JS Promises
+# JavaScript Promises
 
 i. Shell
+
 ```
 const flipACoin = new Promise((resolve, reject) => {    
 
 });
+
 ```
 
 
