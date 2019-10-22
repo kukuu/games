@@ -140,6 +140,10 @@ ii. https://github.com/kukuu/secure-restful-react-redux-web-app/blob/master/book
 
 https://github.com/kukuu/siliconlabs/blob/master/bcrypt
 
+### Snippets
+
+https://github.com/kukuu/AGILITY/blob/master/white-paper/architectural-solutions/snippets.md
+
 
 ### Code Review tips
 
