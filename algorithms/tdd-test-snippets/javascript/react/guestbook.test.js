@@ -2,7 +2,7 @@
 import { renderComponent, expect } from '..test_helper';
 import GuestbookList from '../../src/components/guestbook_list';
 
-describe('', () => {
+describe('uestbook list', () => {
 	let component;
 
 	beforeEach(() => {
