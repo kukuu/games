@@ -22,6 +22,8 @@ class App extends Component {
 
 
 	render(){
+		
+		let { counter } = this.state;
 		return(
 			<div>
 				<h1>Hi</h1>
