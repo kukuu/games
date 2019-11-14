@@ -23,8 +23,12 @@ describe('It updates the button on click', () => {
 	//console.log(button.props());//shows onclick as props
 	button.simulate('click'); //1
 	button.simulate('click');//2
+	button.simulate('click');//3
 	//console.log(component.state());
+	
+	//button.props().onclick();//Replace simulatefor single click.
+	//expect(component.state().counter).toEqual(1);
 
-	expect(component.state().counter).toEqual(2);
+	expect(component.state().counter).toEqual(3);
 
 });
