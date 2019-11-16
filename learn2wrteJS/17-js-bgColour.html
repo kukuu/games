@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Hello World</title>
+		<meta charset='UTF-8'>
+
+		<script language='javascript' type='text/javascript'>
+			function colour() {
+				for (let i = 0; i < document.colourpanel.color.length; i++) {
+					if (document.colourpanel.color[i].checked) {
+						document.bgColor = document.colourpanel.color[i].value;
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>Change background colour</h1>
+		<form name='colourpanel'>
+			<input type='radio' name='color' value='red' onclick='colour()'>Red
+			<input type='radio' name='color' value='blue' onclick='colour()'>Blue
+			<input type='radio' name='color' value='yellow' onclick='colour()'>Yellow
+		</form>
+
+	</body>
+</html>

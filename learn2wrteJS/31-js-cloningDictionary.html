@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script>
+			
+			function clone(obj) {
+
+				if (obj === null || typeof obj !== 'object') {
+					return obj;
+				}
+
+				temp = obj.constructor();
+
+				for (let k in obj) {					
+					temp[k] = clone(obj[k]);
+				}
+
+				return temp;
+			}
+
+			
+			var bert = {name: 'Bert', age: 7};
+			var ernie = clone(bert);
+			ernie.name = 'Ernie';
+			
+			console.log(bert.name + " is aged " + bert.age);
+			console.log(ernie.name + " is aged " + ernie.age);
+
+			
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
+

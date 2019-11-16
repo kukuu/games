@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Constructor and operators</title>
+		<meta charset='UTF-8'>
+		<script language='javascript' type='text/javascript'>
+			var past = new Date(),
+				presentSet = new Date(),
+				presentUnset = new Date(),
+				future = new Date();
+
+			//presentSet.setFullYear(2019,11,2); // actively set to today
+			future.setFullYear(2019,12,25); // Christmas
+			past.setFullYear(2019,1,1); // beginning of year
+
+			results = '';
+			/*
+			if (past < future) 
+			{
+				results = results + "Start of Year is less than Christmas";
+			} else {
+				results = results + "Start of Year is more than Christmas?";
+			}
+			*/
+			results = results + '<br />';
+			
+			if (presentSet == presentUnset) {
+				results = results + "presentSet == presentUnset";
+			} else if (presentSet === presentUnset) {
+				results = results + "presentSet === presentUnset";
+			} else {
+				results = results + "no idea";
+			}
+
+			document.write(results);
+			
+			
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

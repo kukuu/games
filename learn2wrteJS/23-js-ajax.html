@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>String manipulation</title>
+		<meta charset='UTF-8'>
+		
+
+
+	</head>
+	<body>
+		
+		<div id='names'>
+
+		</div>
+
+		<script>
+			
+			window.onload = loadData();
+
+			function loadData() {
+
+				var results = document.getElementById('names');
+				var httpReq = new XMLHttpRequest();
+				httpReq.open('GET', 'http://www.filltext.com?rows=10&f={firstName}', true);
+
+				httpReq.onreadystatechange = function() {
+
+					console.log("readyState	= " + httpReq.readyState + " / status = " + httpReq.status);
+					if (httpReq.readyState != 4 || httpReq.status != 200) {
+						return;
+					}
+
+					let data = JSON.parse(httpReq.responseText);
+
+					for (i = 0; i < data.length; i++) {
+						results.innerHTML += "<li>" + data[i].f + "</li>";
+					}
+
+				};
+				
+				httpReq.send();
+				
+			}
+			
+		</script>
+
+	</body>
+</html>

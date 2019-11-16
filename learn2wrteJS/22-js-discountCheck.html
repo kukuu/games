@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>String manipulation</title>
+		<meta charset='UTF-8'>
+		
+		<script>
+			
+			discountRate = 0.05;
+			quantity = 5;
+			pricePerUnit = 2;
+			total = quantity * pricePerUnit;
+			discountedTotal = total - (total * discountRate);
+
+			if (total >= 10) {
+				document.write("you qualify for a discount, price is &pound;" + discountedTotal + " instead of &pound;" + total);
+			} else if (total >= 8) {
+				document.write("you almost qualify for a discount, add one more apple to qualify <br />"
+					+ "current total &pound;" + total);
+			} else {
+				document.write("no discount <br />"
+					+ "current total &pound;" + total);
+			}
+			
+		</script>
+
+	</head>
+	<body>
+		
+
+		
+
+
+	</body>
+</html>

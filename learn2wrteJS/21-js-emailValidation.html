@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>String manipulation</title>
+		<meta charset='UTF-8'>
+		
+		<script>
+			
+			function validate() {
+
+				let emailToCheck = document.submissionForm.email.value;
+
+				if (emailToCheck.length == 0)
+				{
+					fail("no email");
+					return;
+				}
+
+				if (emailToCheck.indexOf('@') == -1)
+				{
+					fail("no @ sign");
+					return;
+				}
+
+				let parts = emailToCheck.split('@');
+				if (parts[0].length	== 0)
+				{
+					fail("no first part");
+					return;
+				}
+
+				if (parts[1].indexOf('.') == -1)
+				{
+					fail("no . in domain");
+					return;
+				}
+
+				if (parts[1].length < 3)
+				{
+					fail("domain too short");
+					return;
+				}
+
+				document.submissionForm.submit();
+
+			}
+
+			function fail(msg) {
+				s = document.getElementById('emailError');
+				s.innerHTML = msg;
+			}
+			
+		</script>
+
+	</head>
+	<body>
+		<H2>Booking form</H2>
+
+		<form name='submissionForm' action='#'>
+			<p>Email: <input type='input' name='email' value='' /> </p>
+			<input type='button' onclick='validate()' value='submit' />
+		</form>			
+
+		<p><span id='emailError'></span></p>
+
+
+	</body>
+</html>

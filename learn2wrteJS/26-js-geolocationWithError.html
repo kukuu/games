@@ -1,0 +1,53 @@
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		
+		<button onclick='getLocation()'>Get my location</button>
+
+		<p id='geo'>
+		<p id='mapHolder'>
+		</p>
+		</p>
+
+		<script>
+			let geo = document.getElementById('geo');
+
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition, errorHandler);					
+				} else {
+					geo.innerHTML = 'not supported';
+				}
+
+			}
+
+			function showPosition(pos) {
+				geo.innerHTML = "Latitude = " + pos.coords.latitude + "<br/> Longitude = " + pos.coords.longitude;
+				let mapHolder = document.getElementById('mapHolder');
+				// need to register with Google API to use
+				// let imgUrl = 'https://maps.googleapis.com/';
+				// mapHolder.innerHTML = '<img src="' + imgUrl + '"/>';
+
+			}
+
+			function errorHandler(error) {
+				switch (error.code) {
+					case error.PERMISSION_DENIED:
+						geo.innerHTML = "Permission denied";
+						break;
+					case error.TIMEOUT:
+						geo.innerHTML = "Timeout";
+						break;
+					default:
+						geo.innerHTML = "Anything else";
+						break;
+				}
+
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>reverse push join</title>
+		
+		<meta charset='UTF-8'>
+		<script language='javascript' type='text/javascript'>
+			let exampleArray = [2,3,4,5,1];
+
+			function checkEmpty() {
+
+				if (exampleArray.length == 0) {
+					btnShift = document.getElementById('btnShift');					
+					btnShift.disabled = true;
+					btnPop = document.getElementById('btnPop');
+					btnPop.disabled = true;
+				} else {
+					btnShift = document.getElementById('btnShift');					
+					btnShift.disabled = false;
+					btnPop = document.getElementById('btnPop');
+					btnPop.disabled = false;
+				}
+			}
+
+			function display() {
+				ip = document.getElementById('insertionPoint');
+				ip.innerHTML = exampleArray.join(" --- ");
+			}
+
+			function sort() {
+				exampleArray.sort();
+				display();
+			}
+
+			function sortNumeric() {
+				exampleArray.sort(function(a,b) { return a-b; });
+				display();
+			}
+			
+			function reverse() {
+				exampleArray.reverse();
+				display();
+			}
+			
+			function push(x) {
+				exampleArray.push(x);
+				checkEmpty();
+				display();
+			}
+
+			function unshift(x) {
+				exampleArray.unshift(x);
+				checkEmpty();
+				display();
+			}
+
+			function shift(x) {
+				x.value = exampleArray.shift();	
+				checkEmpty();			
+				display();
+			}
+
+			function pop(x) {
+				x.value = exampleArray.pop();				
+				checkEmpty();
+				display();
+			}
+			
+		</script>
+		
+		
+	</head>
+	<body>
+		<p id="insertionPoint"></p>
+
+		<input id="num" type="text" />		
+		<button id="btnPop" onclick="pop(num);">Pop</button>
+		<button onclick="push(num.value);">Push</button>
+		<button onclick="unshift(num.value);">Unshift</button>
+		<button id="btnShift" onclick="shift(num);">Shift</button>
+		<br/>
+		<button onclick="sort();">Sort</button>
+		<button onclick="sortNumeric();">Sort (numeric)</button>
+		<button onclick="reverse();">Reverse</button>
+		<script>
+			display();
+		</script>
+	</body>
+</html>

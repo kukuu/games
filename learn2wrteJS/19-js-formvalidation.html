@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>String manipulation</title>
+		<meta charset='UTF-8'>
+		
+		<script>
+			
+			function validate() {
+
+				if (document.submissionForm.fname.value.length == 0)
+				{
+						alert('enter first name');
+						return;
+				}
+
+				if (document.submissionForm.lname.value.length == 0)
+				{
+						alert('enter last name');
+						return;
+				}
+
+				if (document.submissionForm.email.value.length == 0)
+				{
+						alert('enter email');
+						return;
+				}
+
+				subnow = confirm('do you want to submit now?');
+
+				if (subnow) {
+					document.submissionForm.submit();
+					document.submissionForm.email.value = '';
+					document.submissionForm.fname.value = '';
+					document.submissionForm.lname.value = '';
+
+				} else {
+					return;
+				}
+
+			}
+			
+		</script>
+
+	</head>
+	<body>
+		<H2>Booking form</H2>
+
+		<form name='submissionForm' action='#'>
+			<p>First name: <input type='input' name='fname' value='' /> </p>
+			<p>Last name: <input type='input' name='lname' value='' /> </p>
+			<p>Email: <input type='input' name='email' value='' /> </p>
+			<input type='button' onclick='validate()' value='submit' />
+		</form>			
+
+
+	</body>
+</html>

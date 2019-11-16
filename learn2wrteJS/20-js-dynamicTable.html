@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Dynamic table</title>
+		<meta charset='UTF-8'>
+		
+		
+
+	</head>
+	<body>
+		<H2>Gallery from json</H2>
+
+		<p><img id='fullSized' src='' alt='full sized placeholder' /></p>
+		<br /><br /><br />
+		<p id='thumbPoint'></p>
+
+		<script>
+			let photos = [
+					{
+						'href': 'images/Lizzie.jpg',
+						'src': 'images/Lizzie.jpg',
+					},
+					{
+						'href': 'images/Sybil.jpg',
+						'src': 'images/Sybil.jpg',
+					},
+					{
+						'href': 'images/Tink.jpg',
+						'src': 'images/Tink.jpg',
+					},
+					{
+						'href': 'images/Victor.jpg',
+						'src': 'images/Victor.jpg',
+					},
+					{
+						'href': 'images/Wendy.jpg',
+						'src': 'images/Wendy.jpg',
+					},
+				],
+				insertPoint = document.getElementById('thumbPoint'),
+				thumbnail,
+				a_tag;
+
+			for (i = 0; i < photos.length; i++) {
+				a_tag = document.createElement('a');
+				a_tag.href = photos[i].href;
+
+				thumbnail = document.createElement('img');
+				thumbnail.src = photos[i].src;
+				thumbnail.width = '100';
+				thumbnail.weight = "100";
+
+				a_tag.appendChild(thumbnail);
+
+				document.body.insertBefore(a_tag, insertPoint);
+
+				a_tag.addEventListener('click', showImage);
+
+			}
+
+			document.getElementById('fullSized').src = photos[0].href;
+			console.log(i);
+
+			function showImage(o) {
+				console.log('here');
+				o.preventDefault();
+				document.getElementById('fullSized').src = this.href;
+			}
+			
+			
+		</script>
+
+
+	</body>
+</html>

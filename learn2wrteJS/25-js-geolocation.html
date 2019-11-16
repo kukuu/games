@@ -1,0 +1,32 @@
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		
+		<button onclick='getLocation()'>Get my location</button>
+
+		<p id='geo'>
+		
+		</p>
+
+		<script>
+			let geo = document.getElementById('geo');
+
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					geo.innerHTML = 'not supported';
+				}
+
+			}
+
+			function showPosition(pos) {
+				geo.innerHTML = "Latitude = " + pos.coords.latitude + "<br/> Longitude = " + pos.coords.longitude;
+			}
+		</script>
+	</body>
+
+</html>

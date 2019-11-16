@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			var bert = {name: 'Bert', age: 5, weight: 5.2 };
+			var ernie = {name: 'Ernie', age: 6, weight: 4.2 };
+
+			var welcome = function(greeting, house) 
+			{
+				console.log(greeting + " to " + this.name + " (aged " + this.age + ") of house " + house);
+			}
+
+			welcome.call(bert, "Meow", 'York');
+			welcome.call(ernie, "Woof", 'Lancaster');
+						
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
