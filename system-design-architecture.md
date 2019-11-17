@@ -91,7 +91,11 @@ iii. User interfaces
 
 1. Principles of Software Architecture - https://github.com/kukuu/AGILITY/blob/master/white-paper/principles-of-sw-architecture.png
 
-i. Business goals ii. Quality Attributes iii. Architecture
+       i. Business goals 
+       
+       ii. Quality Attributes 
+       
+       iii. Architecture
 
 2. Design decisions - https://github.com/kukuu/AGILITY/blob/master/white-paper/software-architecture-main.jpg
 
@@ -183,7 +187,7 @@ MVVM Pattern
 7. Use SOLID Principles
 
 
-## What is diff between functional and object oriented programming?
+## Functional and Object Oriented Programming
 
 Both concepts have different methods for storing the data and how to manipulate the data. 
 
