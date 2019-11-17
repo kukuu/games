@@ -1,6 +1,6 @@
 # Algorithms
 
-https://github.com/kukuu/AGILITY/blob/master/algorithms.md
+https://github.com/kukuu/algorithms/blob/master/algorithms.md
 
 # Systems Design and Architecture
 
