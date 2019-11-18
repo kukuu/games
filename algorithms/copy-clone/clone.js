@@ -9,7 +9,6 @@
 //How to copy JavaScript object to new variable NOT by reference(Shallow)?
 //Importance: You can keep your copy in case you lose pointer to your original reference
 
-//Clone
 
 function keepCloning(objectpassed) {
   if (objectpassed === null || typeof objectpassed !== 'object') {
@@ -19,7 +18,7 @@ function keepCloning(objectpassed) {
 // give temporary-storage the original obj's constructor
 var temporaryStorage = objectpassed.constructor();
 
-	//Loop through object signature
+	//Loop through object (signature)
   for (var key in objectpassed) {
     temporaryStorage[key] = keepCloning(objectpassed[key]);
   }
