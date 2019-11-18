@@ -126,9 +126,11 @@ Adding missed or new features
 
 28. Check remote repo
 
-29. "Confirm and click branch  changes have been made" 
+29. Confirm and click branch  changes have been made 
 
 30. Go to 8 : Compare and pull request
+
+.............
 
 In case it is not complete. Add a message : DONT MERGE:  say for example to add a misssing image and send back.
 Work to be done in same branch
