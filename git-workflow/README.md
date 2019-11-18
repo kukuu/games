@@ -124,7 +124,9 @@ Adding missed or new features
 
 27. git push origin image-update
 
+
 28. Check remote repo
+
 
 29. Confirm and click branch  changes have been mades 
 
