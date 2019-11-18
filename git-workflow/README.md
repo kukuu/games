@@ -128,18 +128,21 @@ Adding missed or new features
 
 29. Confirm and click branch  changes have been made 
 
-30. Go to 8  Compare and pull request
+30. In case it is not complete. Add a message : DONT MERGE:  say for example to add a misssing image and send back.
+Work to be done in same branch
 
-31. git add .
+31. Go to 8  Compare and pull request
 
-32. git commit -m "added last image"
+32. git add .
 
-33. git push origin image-update
+33. git commit -m "added last image"
 
-34. Check remote repo and a timeline will be added to preious commit prior to adding the missing image
+34. git push origin image-update
 
-35. You should see message : THIS PAGE IS OUT OF DATE. REFRESH
+35. Check remote repo and a timeline will be added to preious commit prior to adding the missing image
 
-36. (REVIEWER) Go back to conversations and MERGE.
+36. You should see message : THIS PAGE IS OUT OF DATE. REFRESH
 
-37. Go to master branch and check updates.
+37. (REVIEWER) Go back to conversations and MERGE.
+
+38. Go to master branch and check updates.
