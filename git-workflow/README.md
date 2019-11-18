@@ -124,11 +124,9 @@ Adding missed or new features
 
 27. git push origin image-update
 
-
 28. Check remote repo
 
-
-29. Confirm and click branch  changes have been mades 
+29. "Confirm and click branch  changes have been made" 
 
 30. Go to 8 : Compare and pull request
 
