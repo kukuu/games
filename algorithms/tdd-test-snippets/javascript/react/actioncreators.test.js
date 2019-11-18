@@ -5,7 +5,7 @@ import { expect } from '..test_helper';
 import { addUser } from '../../src/actions';
 
 describe('actions', () => {
-	describe('', () => {
+	describe('action creator', () => {
 		it('has correct type', () => {
 			const action = addUser();
 			expect(action.type).to.equal(ADD_USER);
