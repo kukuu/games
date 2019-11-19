@@ -226,12 +226,46 @@ https://github.com/kukuu/javascript/blob/master/ejs/server.js
 ```
 6. To execute test script: npm run test
 
-
 ##### Extended test
 
 1. https://github.com/kukuu/unittests/tree/master/mocha-chai/test 
 
 2. Requires Gulp, Mocha and Chai(npm install --save-dev).
+
+
+### TDD
+
+gulp.js
+,,,
+
+var gulp = require('gulp'),
+    mocha = require('gulp-mocha'),
+    babel = require('babel-register');
+
+gulp.task('test', function() {
+    return gulp.src(['test/*.js'])
+        .pipe(mocha({
+            compilers:babel
+        }));
+});
+
+gulp.task('tdd', function() {
+    return gulp.watch('test/*.js', ['test']);
+})
+
+
+gulp.task('tdd-single', function() {
+    return gulp.watch('test/*.js')
+        .on('change', function(file) {
+            gulp.src(file.path)
+                .pipe(mocha({
+                compilers: babel
+            }))
+        });
+});
+
+,,,
+
 
 
 ### FizzBuzz
@@ -333,10 +367,20 @@ Attacks and vulnerabilities
 
 5. CORS
 
-##### Tools
+##### Metrics Tools  
 
 1. Morgan - for logging vulnerabilities
 
 2. SNYK - Checking vulnerabilities in NPM and other packages in CI/CD pipeline
 
-3. Helmet - Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help! It includes a  11 packages that all work to block malicious parties from breaking or using an application to hurt its users.
+3. Prometheus - The Prometheus server works on the principle of scraping, i.e., invoking the metrics endpoints of the various nodes that it is configured to monitor. It collects these metrics at regular intervals and stores them locally. The nodes expose these over the endpoints that the Prometheus server scrapes.
+
+4. Helmet - Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help! It includes a  11 packages that all work to block malicious parties from breaking or using an application to hurt its users.
+
+5. Alertmanager -  The Alertmanager handles alerts sent by client applications such as the Prometheus server. It takes care of deduplicating, grouping, and routing them to the correct receiver integrations such as email, PagerDuty, or OpsGenie. It also takes care of silencing and inhibition of alerts.
+
+6. Kibana - Kibana is an open-source data visualization and exploration tool used for log and time-series analytics, application monitoring, and operational intelligence use cases. It offers powerful and easy-to-use features such as histograms, line graphs, pie charts, heat maps, and built-in geospatial support.
+
+# Technopedia 
+
+https://github.com/kukuu/Technopedia/blob/master/README.md
