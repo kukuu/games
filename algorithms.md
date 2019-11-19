@@ -132,6 +132,8 @@ This is a standard  technique of communicating  events upwards.  The child will 
 
 Just "Keep it Stupidly Simple (KISS)". Benefit of a design pattern must outweigh  overhead and investment costs of introducing it. 
 
+# Coding
+
 
 ### Shallow and Deep clones
 
