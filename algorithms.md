@@ -12,6 +12,127 @@ Finally, think about re-factoring and modularising at a stage.
 
 Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
+
+# Software Design Architecture & Management
+
+```
+Managing Component dependencies: 
+```
+
+
+Think of a software as a number of dependencies between different  sections  of the application. This will ineffectively help to manage risks and conflicts  as application  grows.
+
+At any point of the application's growth, if you add different  libraries, this should not affect teams building  on the surfaces of the application from different perspectives - Separation of function - Listov substitution.
+
+Break project into independent components and have key dependencies shared where needed. 
+
+Manage data flow between objects other than leaving it to a bunch of singletons. This can be a tangled mess.
+
+
+```
+Simplicity:
+```
+
+
+Simplicity  is key, and one way data flow should manage data control. Best practices is to limit the number of objects to:
+
+i. View
+
+ii. Controller
+
+iii. Data objects 
+
+Don't  complicate with managers, providers, executioners, helpers etc.
+
+When data flow is one way is easy to reason. Views should be leaf nodes where data flows into and not to come back. Must have no business  logic. If there is a bug you will quickly know where is coming  from, and debug.
+
+Data layer must contain minimum logic rules other than that affecting internal states. Including initialisation.
+
+Adopting a Single responsibility pattern makes it easy to reason about whatever a class in a bunch of them is doing. When a class is becoming  too big, and not being able to reason this is time to think about refactoring.
+
+
+```
+Ownership graph:
+```
+
+
+Another good practice is to follow the ownership  graph of the overall project. Taking a look at which object  owns which and dependencies  between them.
+
+Data should  flow from parent to child. As soon as there are two parents modifying a child there could be potential conflict and symptom of code smell and memory  leaks.
+
+This is where singletons  become a problem  - flowing all over in the system if not properly managed.  They are better  managed  through DI (Dependency Injection). This can make them more testable to. They are good in such a way that they dont have dependencies and teams can create their own, but they bring along  two way data flow/communication. A talking to B, B talking to A and C etc. Becomes complicated like a kitchen  sink and spaghetti.  If you have a bunch of them in an application un-manged they can cause chaos, and uncontrolled.
+
+
+```
+Communication patterns:
+```
+
+
+This then brings the need to think about  communication  patterns in the application's state. Instead of communicating directly between one another, they can issue notifications  for other singletons to listen to them. This will take care of two way data flow.
+
+The notification should come from a central  hub, with singletons  broadcasting their own actions. But not letting anyone  take these actions if not needed.
+
+A variation  of this  is for singletons  to expose a publish , subscribe interface. Here the system has a single broadcasting object,  and many listener objects  awaiting  on that.
+
+This is the Publish, Subscribe interface.  One of the best design patterns. Versatile  and encourages  one way data flow - as in REACT.
+
+Another variation  of this is the Delegate pattern. An object gives a callback explaining what it is doing.
+
+Like the publish/subscribe, but here there is only single delegate pattern. With some integration  with the host objects. 
+
+The observer pattern also uses notication for broadcasting, but unlike Publish/Subscribe which uses Messagin, the Observer uses handlers (AngularJS)
+
+
+
+
+```
+Inheritance:  
+```
+
+Inheritance is a poor OO design pattern if not architected  well. If poorly managed you can have a sub class  communicating with a super class,  further on to another super, super etc and can bs messy. Over a period they become deeply tied to each other becoming difficult  or impossible  to refactor. 
+
+
+
+```
+Containment:
+``` 
+
+Instead of inheritance one can take s look  at containment  pattern. 
+
+Here a class can contain other objects and controllers. It can deligate behaviour  to any of its members to help compose behaviours - mixing and matching without getting into the internal structure  of polymorphism,  and other known inheritance patterns. 
+
+
+```
+Lazy initialization:
+```
+
+There is also lazy intialization when you dont create objects  until you need them. Using the Module pattern with Typescript where you can have loading on demand. Great way to increase start up performance  time, including usage in Server Side Rendering.
+
+With the adapter pattern,  you can have many different  types of objects, methods and APIs. Using adaptors you can match them to certain APIs and interfaces, enabling you to  perform common set up operations. The adaptor pattern can be performed with protocols or class wrappers.
+
+```
+Factory:
+```
+
+This is another  pattern that can be used on heterogeneous  components. 
+
+There are also mixins, and   plug ins.
+
+
+```
+Anti-pattern
+```
+
+Chain of responsibility
+
+There is also the chain of responsibility  pattern. Common in hierarchical or tree structures. 
+
+This is a standard  technique of communicating  events upwards.  The child will issue an event and the parent will try to handle it. If it cant, it will continue to bubble  upwards to grand parents, great grand parents  and further  above. Until it reaches top. This is an anti-pattern   as it involves  two way data flow.
+
+
+Just "Keep it Stupidly Simple (KISS)". Benefit of a design pattern must outweigh  overhead and investment costs of introducing it. 
+
+
 ### Shallow and Deep clones
 
 https://github.com/kukuu/algorithms/tree/master/algorithms/copy-clone
