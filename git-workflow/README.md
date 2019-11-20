@@ -4,24 +4,37 @@ Work Flow - Feature Branches with Merge commits
 
 Option A - When  local repo exists before creating github repo
 
-Create and checkout branch - git checkout -b feature-1
+Create and checkout branch:  git checkout -b feature-1
+
 git status
+
 git branch -a
+
 git add .
-git commit -m ''
+
+git commit -m 'message'
+
 git checkout feature-a
+
 gitcheckout feature-b
 
 merging (fast forward and recursive strategy):
+
 git checkout master
+
 git merge feature-a   
+
 git merge feature-b  
 
 
 
-1. Push to git - git push 'remote repo url' master
+1. Push to git 
 
-2. Create an alias to 'remote repo url' - git remote add 'repourl' origin
+git push 'remote repo url' master
+
+2. Create an alias to 'remote repo url' 
+
+git remote add 'repourl' origin
 
 3. Push to alias - git push origin master
 
@@ -29,7 +42,9 @@ git merge feature-b
 
 Option B - When you dont have a local repository. Alias is created by default.
 
-Check alias with command 'git remote -v' 
+Check alias with command:
+
+'git remote -v' 
 
 Result  gives 'fetch' and 'push'
 
@@ -55,15 +70,14 @@ to delete branch: git branch -d feature-3 (when branch is  merged)
 Conflicts:
 
 No need to add message on command commit, because is a merge commit.
+
 1. Fix error
 
 2. git status
 
 3. git add .
 
-4. git commit
-
-5. in new editor do 'shift : wq enter key' to exit
+4. in new editor do 'shift : wq enter key' to exit
 
 6. git log --oneline (git log)
 
@@ -88,7 +102,7 @@ Collaboration:
 
 9. Add extra useful messages
 
-10. => click ' createpull request' button
+10. => click ' create pull request' button
 
 11. Add assignee/reviewers to code  review and request to merge
 
@@ -128,7 +142,7 @@ Adding missed or new features
 
 29. Confirm and click branch  changes have been made 
 
-30. In case it is not complete. Add a message : DONT MERGE:  say for example to add a misssing image and send back.
+30. In case it is not complete. Add a message : DONT MERGE:   for example to add a misssing image and send back.
 Work to be done in same branch
 
 31. Go to 8  Compare and pull request
