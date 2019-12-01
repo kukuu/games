@@ -50,4 +50,8 @@ npm install -g gulp
 gulp taskname
 
 ```
-See  - https://github.com/kukuu/AGILITY/blob/master/gulp-tdd.png
+Test report 
+
+1. https://github.com/kukuu/AGILITY/blob/master/automated-testing-with-gulp.png
+
+2. https://github.com/kukuu/AGILITY/blob/master/gulp-tdd.png
