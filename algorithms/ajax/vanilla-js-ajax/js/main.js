@@ -158,7 +158,11 @@ function renderHTML(data){
 	}
 
 	//We begin our loop of our Array of item objects, and insert into container.
+	// animalContainer is a cache entity. See line 18
+	//insertAdjacentHTML( position , markup ) is a method on HTMLElement DOM nodes. It takes two string arguments. ... The second argument is a string containing HTML markup that gets parsed as an HTML fragment 
+	//(similar to a string assigned to innerHTML ) and inserted to the position given by the first argument
+	//It enables  faster HTML Snippet Injection
+	
 	animalContainer.insertAdjacentHTML("beforeend", htmlString);
-
 }
 
