@@ -39,12 +39,10 @@
 | REACT ROUTER ssr (rrssr) | https://github.com/tylermcginnis/rrssr |
 | Learn WebGL | https://www.youtube.com/watch?v=kju9OgYrUmU |
 | JavaScript RESTful APIs | https://itnext.io/javascript-fundamentals-an-introduction-to-rest-apis-7cbe8a809d3b |
+| REST and RESTful Web Services explained | https://www.youtube.com/watch?v=LooL6_chvN4 , https://www.youtube.com/watch?v=FOZtRzY5x8E (2) |
+| REST and RESTful Web Services explained | https://www.youtube.com/watch?v=LooL6_chvN4 . https://www.youtube.com/watch?v=FOZtRzY5x8E (2) |
 
-| REST and RESTful Web Services explained | https://www.youtube.com/watch?v=LooL6_chvN4  (1)  https://www.youtube.com/watch?v=FOZtRzY5x8E (2) |
 
-# Video Tutorials:
-
-https://www.youtube.com/watch?v=LooL6_chvN4  (1)  https://www.youtube.com/watch?v=FOZtRzY5x8E (2) - REST and RESTful Web Services explained
 
 https://www.youtube.com/watch?v=y1ikxe24zjs - Kotlin
 
