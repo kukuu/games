@@ -28,8 +28,7 @@
 |  JavaScript Promises | https://medium.com/dailyjs/javascript-promises-zero-to-hero-plus-cheat-sheet-64d75051cffa |
 | Caching | https://medium.com/datadriveninvestor/all-things-caching-use-cases-benefits-strategies-choosing-a-caching-technology-exploring-fa6c1f2e93aa |
 | Audio captions w3 specification |  https://w3c.github.io/webvtt/#introduction-caption. |
-| HATEOS | https://restfulapi.net/hateoas/ |
-
+| HATEOS | https://restfulapi.net/hateoas/ |Update
 | Getting started REDUX, REACT, GraphQL and Express | https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56 |
 | Getting started REDUX, REACT, GraphQL and Express | https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56 |
 | JavaScript es6 CURRY functions | https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1 |
