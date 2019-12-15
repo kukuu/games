@@ -40,7 +40,6 @@
 | Learn WebGL | https://www.youtube.com/watch?v=kju9OgYrUmU |
 | JavaScript RESTful APIs | https://itnext.io/javascript-fundamentals-an-introduction-to-rest-apis-7cbe8a809d3b |
 | REST and RESTful Web Services explained | https://www.youtube.com/watch?v=LooL6_chvN4 , https://www.youtube.com/watch?v=FOZtRzY5x8E (2) |
-| REST and RESTful Web Services explained | https://www.youtube.com/watch?v=LooL6_chvN4 . https://www.youtube.com/watch?v=FOZtRzY5x8E (2) |
 | Kotlin | https://www.youtube.com/watch?v=y1ikxe24zjs |
 | Microservice with Node, NginX and Docker | https://www.youtube.com/watch?v=EsCfPxjmnjo  (1) https://www.youtube.com/watch?v=aWxR05rUoto (2) |
 | Best practices of integration tests | https://techbeacon.com/devops/6-best-practices-integration-testing-continuous-integration |
