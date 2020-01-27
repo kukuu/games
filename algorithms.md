@@ -114,7 +114,7 @@ With the adapter pattern,  you can have many different  types of objects, method
 Factory:
 ```
 
-This is another  pattern that can be used on heterogeneous  components. 
+This is another  pattern that can be used on heterogeneous  components. Singletons per say. 
 
 There are also mixins, and   plug ins.
 
