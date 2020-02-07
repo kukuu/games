@@ -12,6 +12,14 @@ Finally, think about re-factoring and modularising at a stage.
 
 Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
+## The Big O notation
+
+A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items. Informally, saying some equation f(n) = O(g(n)) means it is less than some constant multiple of g(n). 
+
+## Bubble sort
+
+Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted, comparing each pair and swapping them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+
 
 # Software Design Architecture & Management
 
