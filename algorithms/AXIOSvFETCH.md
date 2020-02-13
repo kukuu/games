@@ -4,7 +4,7 @@
 
 1. Handing error with fetch api.
 
-2.Getting api response in 2 steps.
+2. Getting api response in 2 steps.
 
 3. No timeout functionality available.
 
@@ -14,7 +14,7 @@
 
 6. No cookies by default
 
-## Handing error with fetch api
+## Handling error with fetch api
 
 A very simple API request using fetch looks like this:
 
