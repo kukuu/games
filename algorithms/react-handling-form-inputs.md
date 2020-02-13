@@ -126,3 +126,148 @@ ii. This example is using [evt.target.name], with the name in square brackets, t
 
 iii. Also note that, because we are using a single state object that contains multiple properties, we're spreading (...state) the existing state back into the new state value, merging it manually, when calling setState. This is required when using React.useState in the solution.
 
+
+## TextArea Inputs
+
+textarea inputs functions exactly as <input type="text" /> does andhandleChange` remains unchanged:
+
+```
+import React from "react";
+function Form() {
+  const [state, setState] = React.useState({
+    bio: ""
+  })
+  return (
+    <form>
+      <label>
+        Bio
+        <textarea name="bio" value={state.bio} onChange={handleChange} />
+      </label>
+    </form>
+  );
+}
+
+```
+## Select Inputs
+
+The select element, beyond its DOM structure being defined slightly different, 
+is the same in the way it publishes changes and consumes values:
+
+```
+import React from "react";
+function Form() {
+  const [state, setState] = React.useState({
+    version: "16.8"
+  })
+  return (
+    <form>
+      <label>
+        Favorite version
+        <select name="version" onChange={handleChange} value={state.version}>
+          <option value="16.8">v16.8.0</option>
+          <option value="16.7">v16.7.0</option>
+          <option value="16.6">v16.6.0</option>
+          <option value="16.5">v16.5.0</option>
+        </select>
+      </label>
+    </form>
+  );
+}
+
+```
+## Radio Inputs
+
+The <input type="radio" />  value prop is static, representing the option to select. The name is duplicated and must match across the radio buttons that make up the radio button group. The checked prop is introduced with a condition that determines whether that particular button is shown as active or not.
+
+```
+import React from "react";
+function Form() {
+  const [state, setState] = React.useState({
+    level: "master"
+  })
+  return (
+    <form>
+      <div>
+        Level
+        <label>
+          Acolyte
+          <input
+            type="radio"
+            name="level"
+            value="acolyte"
+            checked={state.level === "acolyte"}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Master
+          <input
+            type="radio"
+            name="level"
+            value="master"
+            checked={state.level === "master"}
+            onChange={handleChange}
+          />
+        </label>
+      </div>
+    </form>
+  );
+}
+
+```
+## Checkbox Inputs
+
+The <input type="checkbox" /> element will look a bit like the radio button, in that it utilizes the checked prop.
+But checkboxes are independent controls, not existing in a group, thus they have unique name props 
+like most other inputs:
+
+```
+import React from "react";
+function Form() {
+  const [state, setState] = React.useState({
+    hooks: true
+  })
+  return (
+    <form>
+      <label>
+        With hooks
+        <input
+          type="checkbox"
+          name="hooks"
+          checked={state.hooks}
+          onChange={handleChange}
+        />
+      </label>
+    </form>
+  );
+}
+
+```
+
+
+There is an important change necessitated with checkboxes,
+and that is an adjustment to the handleChange function:
+
+```
+function handleChange(evt) {
+  const value =
+    evt.target.type === "checkbox" ? evt.target.checked : evt.target.value;
+  setState({
+    ...state,
+    [evt.target.name]: value
+  });
+}
+
+```
+
+Note: 
+
+The important change here is in the determination of the value.
+
+A checkbox doesn't contain a string value like text inputs or text areas, and it doesn't contain 
+static options like selects or radio buttons. 
+Instead, it simply knows whether it's on or off. 
+Thus we have to extract its value in a one-off kind of way, 
+checking for the evt.target.type to equal "checkbox" and then looking to evt.target.checked for the value.
+
+Note also that the checked prop is a boolean and, thus, the hooks property in state is also of type boolean.
