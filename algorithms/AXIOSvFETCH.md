@@ -83,8 +83,10 @@ fetch("http://httpstat.us/500")
  
 ### Getting api response in 2 steps:
 
-
 Let’s consider basic fetch api call as below:
+
+```
+
 fetch("http://httpstat.us/500")
     .then(function(response) {
         if (!response.ok) {
@@ -96,6 +98,7 @@ fetch("http://httpstat.us/500")
     }).catch(function(error) {
         console.log(error);
     });
+```
 
 That’s great, but this is not the data you are looking for. That is the response from the server letting you know that your request went through just fine. Great, but you can’t do much with that.
 To get to that data, you have to pass it to .json() first and then you can see it.
