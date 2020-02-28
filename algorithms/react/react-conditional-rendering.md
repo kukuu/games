@@ -379,3 +379,26 @@ function Notification({ status, text }) {
 
 
 ```
+
+## NESTED CONDITIONAL RENDERING IN REACT
+
+For instance, let's have a look at the List component from before that shows either a list, an empty text, or nothing. This is quite useful when working with end points from APIs
+
+```
+function List({ list }) {
+  const isNotAvailable = !list;
+  const isEmpty = !list.length;
+  return (
+    <div>
+      {isNotAvailable
+        ? <p>Sorry, the list is not there.</p>
+        : (isEmpty
+          ? <p>Sorry, the list is empty.</p>
+          : <div>{list.map(item => <Item item={item} />)}</div>
+        )
+      }
+    </div>
+  );
+}
+
+```
