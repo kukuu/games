@@ -300,3 +300,82 @@ function Notification({ text, status }) {
 }
 
 ```
+
+## MULTIPLE CONDITIONAL RENDERINGS 
+
+A JavaScript object with key value pairs for a mapping is called an enum:
+
+```
+const NOTIFICATION_STATES = {
+  info: 'Did you know? ...',
+  warning: 'Be careful here ...',
+  error: 'Something went wrong ...',
+};
+
+```
+
+
+An enum is a great way to handle conditional rendering with multiple conditions in React -  switch case statements on steroids, because they can be used within the JSX. Let's consider the notification component again, but this time with an enum as inlined object (inner curly braces):
+
+
+```
+
+function Notification({ text, status }) {
+  return (
+    <div>
+      {
+        {
+          info: <Info text={text} />,
+          warning: <Warning text={text} />,
+          error: <Error text={text} />,
+        }[status]
+      }
+    </div>
+  );
+}
+
+```
+
+
+The status property key helps us to retrieve the value from the object. Neaater than using SWITCH statements.
+
+
+In this example, we had to use an inlined object, because the values of the object depend on the text property. If it wouldn't depend on the text property, you could use an enum as a constant for the conditional render:
+
+
+```
+
+const NOTIFICATION_STATES = {
+  info: <Info />,
+  warning: <Warning />,
+  error: <Error />,
+};
+
+function Notification({ status }) {
+  return (
+    <div>
+      {NOTIFICATION_STATES[status]}
+    </div>
+  );
+}
+
+```
+
+This cleans things up in the JSX. If we would still rely on the text property from before, we could use a conditional rendering with a function to retrieve the value too.
+
+The enum conditional rendering in React is much more preferred than the switch case statement. Objects as enums open up plenty of options to have multiple conditional renderings. Permutations of booleans are also possible too.
+
+```
+
+const getNotification = text => ({
+  info: <Info text={text} />,
+  warning: <Warning text={text} />,
+  error: <Error text={text} />,
+});
+
+function Notification({ status, text }) {
+  return <div>{getNotification(text)[status]}</div>;
+}
+
+
+```
