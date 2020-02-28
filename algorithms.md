@@ -16,8 +16,7 @@ Types of Algorithms - https://github.com/kukuu/algorithms/tree/master/algorithms
 
 The Big O  exemplifies the complexity of an algorithm in relationship to space and time. It is  theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items. Informally, saying some equation 
 
-`
-``
+```
 f(n) = O(g(n))
 
 ``` 
