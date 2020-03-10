@@ -10,8 +10,9 @@
 
 	<script>
 		var x = document.getElementById("demo");
-
+                  
 		function getLocation() {
+		// Check if geolocation is supported by client
 		  if (navigator.geolocation) {
 		    navigator.geolocation.getCurrentPosition(showPosition);
 		  } else { 
