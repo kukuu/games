@@ -1,5 +1,5 @@
 
-#  JavaScript Object Syntax
+#  JavaScript Object Notation
 
 Objects are a cornerstone of the JavaScript language. 
 
@@ -69,9 +69,6 @@ object["foo"] = object["foo"] + 1;
 Bracket notation is more expressive than dot notation because it allows a variable to specify 
 all or part of the property name. This is possible because the JavaScript interpreter automatically 
 converts the expression within the square brackets to a string, and then retrieves the corresponding property. 
-
-The following example shows how property names can be created on the fly using bracket notation. 
-In the example, the property name foo is created by concatenating the contents of variable f, with the string "oo".
 
 
 Bracket notation also allows property names to contain characters that are forbidden in dot notation.
