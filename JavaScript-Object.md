@@ -210,7 +210,8 @@ console.log(user.ID = user.ID + 1 );
 
 console.log(user["ID"] = user["ID"] + 2);
 
-console.log(user.student.name + " is " + user.student.age + " years old and lives at "  + k["address1"] + " " + k["postCode"]);
+console.log(user.student.name + " is " + user.student.age + " years old and lives at "  + 
+k["address1"] + " " + k["postCode"]);
 
 console.log(user.adder.sum(2, 7));
 
