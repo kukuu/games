@@ -1,188 +1,36 @@
 
-#  JavaScript Object Notation
+//The User Model
 
-Objects are a cornerstone of the JavaScript language. 
+let user = {
+    ID: 1,
+    "student" : 
+        {
+        "name": "Jake",
+         age:30,
+         address:{
+             address1: "123 kkkbbmbmnbmb uy",
+             address12: "5 bmm,hjjhjkh j",
+             postCode: "q12 bop"
+         }
+        }
+    ,
+    adder:{
 
-This article covers the solid basics of JavaScript Objects. As they say you must first walk before you can run. 
-In JavaScript, one must first understand objects before moving on to understanding object-oriented programming.
+        sum: function( a, b) {
+            return a +b ;
+        }
 
-
-Objects are composite data types which are built from primitives and other objects. 
-
-
-## Creating Objects
-JavaScript provides syntax known as object literal notation for quickly creating objects. 
-Object literals are denoted by curly braces. The following example creates an empty object with no properties.
-
-```
-let object = {};
-
-
-```
-
-
-Inside of the curly braces, properties and their values are specified as a list of key/value pairs. 
-Keys can be strings or identifiers, while values can be any valid expression. 
-The list of key/value pairs is comma delimited, with each key and value separated by a colon. 
-
-The following example creates an object with three properties using literal notation. 
-The first property, foo, holds the number one. The second property, bar, is specified using a string,
-and also stores a string value. The third property, baz, stores an empty object.
-
-
-```
-let object = {
-  foo: 1,
-  "bar": "some string",
-  baz: {
-
-  }
-};
-
-```
-
-
-## Accessing Properties
-
-JavaScript provides two notations for accessing object properties.
-
-i. The dot notation
-
-Under dot notation, a property is accessed by giving the host object’s name, followed by a period 
-(or dot), followed by the property name. 
-
-
-object.foo = object.foo + 1;// Will re-render 2
-
-
-
-ii. The Bracket notation
- 
-In bracket notation, the object name is followed by a set of square brackets. 
-Inside the square brackets, the property name is specified as a string. 
-The previous example of dot notation has been rewritten below to use bracket notation. 
-While the code may look different, it is functionally equivalent to the previous example.
-
-object["foo"] = object["foo"] + 1;
-
-
-Bracket notation is more expressive than dot notation because it allows a variable to specify 
-all or part of the property name. This is possible because the JavaScript interpreter automatically 
-converts the expression within the square brackets to a string, and then retrieves the corresponding property. 
-
-
-Bracket notation also allows property names to contain characters that are forbidden in dot notation.
-For example, the following statement is completely legal in bracket notation. However, 
-if you tried to create the same property name in dot notation, you would encounter a syntax error.
-
-```
-
-object["!@#$%^&*()."] = true;
-
-```
-
-## Accessing Nested Properties
-Properties of nested objects can be accessed by chaining dot and/or bracket references together. 
-For example, the following object contains a nested object named baz, which contains another object 
-named foo, which has a property named bar that holds the value five.
-
-
-```
-let object = {
-  baz: {
-    foo: {
-      bar: 5
     }
-  }
-};
-
-```
-
-The following expressions access the nested property, bar. The first expression uses dot notation, 
-while the second expression uses square bracket notation. The third expression combines both notations to achieve the same result.
-
-
-```
-object.baz.foo.bar;
-
-object["baz"]["foo"]["bar"];
-
-object["baz"].foo["bar"];
-
-```
-
-Expressions like the ones shown in the previous example can cause performance
-to suffer if used improperly. Evaluating each dot or bracket expression
-takes time. 
-  
-If the same property is used multiple times, then it makes more sense 
-to access the property once, and then store the value in a local variable for all future uses. 
-
-The following example uses bar many times within a loop.
-However, instead of wasting time computing the same value over and over,
-bar is stored in a local variable.
-
-
-```
-
-let bar = object.baz.foo.bar;
-
-let count = 0;
-
-for (var i = 0; i < 100000; i++) {
-  count += bar;
-  // better than count += object.baz.foo.bar;
 }
+let k = user.student.address;
+//Accessing objects
+//console.log(object.foo);
 
+//console.log(object["foo"]);
+console.log(user.ID = user.ID + 1 );
 
-```
+console.log(user["ID"] = user["ID"] + 2);
 
-## Functions as Methods
+console.log(user.student.name + " is " + user.student.age + " years old and lives at "  + k["address1"] + " " + k["postCode"]);
 
-When a function is used as an object property, it is called a method. Like properties,
-methods can also be specified in object literal notation. The following example shows how this is accomplished.
-
-
-```
-let object = {
-  sum: function(foo, bar) {
-    return foo + bar;
-  }
-};
-
-```
-
-Methods can also be invoked using dot and bracket notation. The following example invokes the sum() method 
-from the previous example using both notations.
-
-
-```
-object.sum(1, 2);
-
-object["sum"](1, 2);
-
-```
-
-## Adding Properties and Methods
-
-Object literal notation is useful for creating new objects, but it cannot 
-add properties or methods to existing objects. 
-
-Fortunately, adding new data to an object is as simple as creating an assignment statement. 
-The following example creates an empty object. Two properties, foo and bar, and a method, 
-baz, are then added using assignment statements. Note, that this example uses dot notation, 
-but bracket notation would work equally as well.
-
-```
-let object = {};
-
-object.foo = 1;
-
-object.bar = null;
-
-object.baz = function() {
-
-  return "hello from baz()";
-};
-
-```
+console.log(user.adder.sum(2, 7));
