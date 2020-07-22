@@ -370,3 +370,7 @@ It can be thought as a _.throttle(dosomething, 16). But with a much higher fidel
 Resource:
 
 https://css-tricks.com/debouncing-throttling-explained-examples/
+
+## Managing CSS performance
+
+https://github.com/kukuu/styled-components-in-ReactJS
