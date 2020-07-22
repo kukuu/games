@@ -216,3 +216,20 @@ k["address1"] + " " + k["postCode"]);
 console.log(user.adder.sum(2, 7));
 
 ```
+## How to use the Fetch API with vanilla JS
+
+```
+
+fetch('url').then(response => {
+    if(response.ok) {
+        return response.json();
+    } else{
+        return Promise.reject(response)
+    }
+}).then(data => {
+    console.log(data);
+}).catch(e => {
+    console.warn("Something went wrong", e)
+});
+
+```
