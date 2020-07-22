@@ -357,3 +357,16 @@ Reversing their roles:
 	•	Debouncing pistol for 1 sec- When user sees an enemy, he clicks mouse, but it will not shoot. 
 	He will click again several times in that sec but it will not shoot. He will see if it still has bullets, 
 	at that time (1 sec after last click) pistol will fire automatically.
+	
+	
+	
+requestAnimationFrame (rAF): 
+
+requestAnimationFrame is another way of rate-limiting the execution of a function.
+
+It can be thought as a _.throttle(dosomething, 16). But with a much higher fidelity, since it’s a browser native API that aims for better accuracy.
+
+
+Resource:
+
+https://css-tricks.com/debouncing-throttling-explained-examples/
