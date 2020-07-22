@@ -374,3 +374,7 @@ https://css-tricks.com/debouncing-throttling-explained-examples/
 ## Managing CSS performance
 
 https://github.com/kukuu/styled-components-in-ReactJS
+
+## REACT Native API calls
+
+https://github.com/kukuu/algorithms/blob/master/algorithms/react-native/api-calls/playground/api-calls.js
