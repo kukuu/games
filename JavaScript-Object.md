@@ -293,7 +293,9 @@ axios
   });
 
 ```
-## Passing otherproperties. You can use an object as parameter to fetch as a second argument
+## Passing argument  to FETCH API
+
+ You can use an object as parameterwith sequences of properties to hook into the FETCH
 
 ```
 
