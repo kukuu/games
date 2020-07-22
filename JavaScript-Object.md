@@ -1,5 +1,5 @@
 
-# Back to Basics: JavaScript Object Syntax
+#  JavaScript Object Notation 
 
 Objects are a cornerstone of the JavaScript language. 
 
