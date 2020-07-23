@@ -377,4 +377,21 @@ https://github.com/kukuu/styled-components-in-ReactJS
 
 ## REACT Native API calls
 
-https://github.com/kukuu/algorithms/blob/master/algorithms/react-native/api-calls/playground/api-calls.js
+https://github.com/kukuu/algorithms/blob/master/algorithms/react-native/api-calls/playground/api-calls.js 
+
+## Status Codes
+
+```
+1xx - Informational
+
+2xx - Success
+
+3xxx - Redirection
+
+4xx - Client Error
+
+5xx - Server Error
+
+```
+
+https://httpstatuses.com/
