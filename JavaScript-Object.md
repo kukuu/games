@@ -359,6 +359,9 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 ```
 
+
+
+
 ## Manageing JavaScript Performance - Throttle vs Debounce
 
  There might be some functionality in a web page which requires time-consuming computations. 
@@ -452,3 +455,11 @@ https://httpstatuses.com/
 ## Gitflow
 
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+
+## REACT Native
+
+[soon]
+
+## REACT
+[soon]
