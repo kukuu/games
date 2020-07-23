@@ -322,6 +322,41 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 ```
 
+
+
+
+## Setting headers with the Fetch API #
+
+Another common thing you might need to do is set headers and other properties for your request.
+This can also be done with the options object.
+
+
+```
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+	method: 'POST',
+	body: 'title=' + encodeURIComponent('My awesome new article') + '&body=' + encodeURIComponent('This is the text of my article'),
+	headers: {
+		'Content-Type': 'application/json'
+	},
+	referrer: 'no-referrer'
+}).then(function (response) {
+	// The API call was successful!
+	if (response.ok) {
+		return response.json();
+	} else {
+		return Promise.reject(response);
+	}
+}).then(function (data) {
+	// This is the JSON from our response
+	console.log(data);
+}).catch(function (err) {
+	// There was an error
+	console.warn('Something went wrong.', err);
+});
+
+```
+
 ## Manageing JavaScript Performance - Throttle vs Debounce
 
  There might be some functionality in a web page which requires time-consuming computations. If such a method is invoked frequently, it might greatly affect the performance of the browser, as JavaScript is a single threaded language
