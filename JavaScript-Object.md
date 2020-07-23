@@ -48,18 +48,21 @@ i. The dot notation
 
 Under dot notation, a property is accessed by giving the host object’s name, followed by a period (or dot), followed by the property name. 
 
+```
 
 object.foo = object.foo + 1;// Will re-render 2
 
-
+```
 
 ii. The Bracket notation
  
 In bracket notation, the object name is followed by a set of square brackets. Inside the square brackets, the property name is specified as a string. The previous example of dot notation has been rewritten below to use bracket notation. While the code may look different, it is functionally equivalent to the previous example.
 
+
+```
 object["foo"] = object["foo"] + 1;
 
-
+```
 Bracket notation is more expressive than dot notation because it allows a variable to specify all or part of the property name. This is possible because the JavaScript interpreter automatically converts the expression within the square brackets to a string, and then retrieves the corresponding property. 
 
 The following example shows how property names can be created on the fly using bracket notation. In the example, the property name foo is created by concatenating the contents of variable f, with the string "oo".
