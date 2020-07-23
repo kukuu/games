@@ -459,7 +459,49 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 ## REACT Native
 
-[soon]
+api POST template:
+
+```
+import React, { Component } from 'react';
+import { Stylesheet, View, Text } from 'react-native';
+
+
+export default class Apicall extends Component {
+
+
+    async componentDidMount(){
+
+        try {
+                await fetch('urlendpoint', {
+                    method: 'GET',
+                    mode: 'no-cors',
+                    headers: {
+                        'Accept': "application/json",
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        user: 'Pete',
+                        password: '12333300-9jnndklf098&'
+                    })
+                })
+        }
+        catch(e) {
+            console.log(e);
+        }
+    }
+
+    render(){
+
+        return (
+            <View>
+                <Text>
+                    Hello
+                </Text>
+            </View>
+        );
+    }
+}
+```
 
 ## REACT
 [soon]
