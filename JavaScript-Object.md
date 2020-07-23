@@ -304,7 +304,8 @@ axios
 
 fetch('https://jsonplaceholder.typicode.com/posts', {
 	method: 'POST',
-	body: 'title=' + encodeURIComponent('My awesome new article') + '&body=' + encodeURIComponent('This is the text of my article')
+	body: 'title=' + encodeURIComponent('My awesome new article') + '&body=' 
+	+ encodeURIComponent('This is the text of my article')
 }).then(function (response) {
 	// The API call was successful!
 	if (response.ok) {
@@ -325,7 +326,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 
 
-## Setting headers with the Fetch API #
+## Setting headers with the Fetch API 
 
 Another common thing you might need to do is set headers and other properties for your request.
 This can also be done with the options object.
@@ -335,7 +336,8 @@ This can also be done with the options object.
 
 fetch('https://jsonplaceholder.typicode.com/posts', {
 	method: 'POST',
-	body: 'title=' + encodeURIComponent('My awesome new article') + '&body=' + encodeURIComponent('This is the text of my article'),
+	body: 'title=' + encodeURIComponent('My awesome new article') + '&body=' + 
+	encodeURIComponent('This is the text of my article'),
 	headers: {
 		'Content-Type': 'application/json'
 	},
@@ -359,23 +361,30 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 ## Manageing JavaScript Performance - Throttle vs Debounce
 
- There might be some functionality in a web page which requires time-consuming computations. If such a method is invoked frequently, it might greatly affect the performance of the browser, as JavaScript is a single threaded language
+ There might be some functionality in a web page which requires time-consuming computations. 
+ If such a method is invoked frequently, it might greatly affect the performance of the browser, 
+ as JavaScript is a single threaded language
 
 
 Architecture - http://demo.nimius.net/debounce_throttle/
 
 Debouncing
 
-Debouncing is a practice used to improve browser performance. It will bunch a series of sequential calls to a function into a single call to that function. It ensures that one notification is made for an event that fires multiple times
+Debouncing is a practice used to improve browser performance. It will bunch a series of 
+sequential calls to a function into a single call to that function. 
+It ensures that one notification is made for an event that fires multiple times
 
 
 Throttling
 
-Throttling will delay executing a function. It will reduce the notifications of an event that fires multiple times. 
+Throttling will delay executing a function. 
+It will reduce the notifications of an event that fires multiple times. 
 
 Examples:
 
-If you have a function that gets called a lot - for example when a resize or mouse move event occurs, it can be called a lot of times. 
+If you have a function that gets called a lot - for example when a resize or mouse move event occurs,
+it can be called a lot of times. 
+
 If you don't want this behaviour, you can Throttle it so that the function is called at regular intervals.
 Debouncing will mean it is called at the end (or start) of a bunch of events.
 
@@ -402,7 +411,8 @@ requestAnimationFrame (rAF):
 
 requestAnimationFrame is another way of rate-limiting the execution of a function.
 
-It can be thought as a _.throttle(dosomething, 16). But with a much higher fidelity, since it’s a browser native API that aims for better accuracy.
+It can be thought as a _.throttle(dosomething, 16). But with a much higher fidelity, 
+since it’s a browser native API that aims for better accuracy.
 
 
 Resource:
