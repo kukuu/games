@@ -447,3 +447,8 @@ https://github.com/kukuu/algorithms/blob/master/algorithms/react-native/api-call
 ```
 
 https://httpstatuses.com/
+
+
+## Gitflow
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
