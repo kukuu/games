@@ -457,6 +457,11 @@ https://httpstatuses.com/
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 
+## Optimising Arrow Functions
+
+https://medium.com/javascript-in-plain-english/5-simple-tips-to-write-better-arrow-functions-a55f40f63d58
+
+
 ## REACT Native
 
 api POST template:
@@ -505,3 +510,5 @@ export default class Apicall extends Component {
 
 ## REACT
 [soon]
+
+
