@@ -364,11 +364,11 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 
 
-## Manageing JavaScript Performance - Throttle vs Debounce
+## Managing JavaScript Performance - Throttle vs Debounce
 
  There might be some functionality in a web page which requires time-consuming computations. 
  If such a method is invoked frequently, it might greatly affect the performance of the browser, 
- as JavaScript is a single threaded language
+ as JavaScript is a single threaded language.
 
 
 Architecture - http://demo.nimius.net/debounce_throttle/
