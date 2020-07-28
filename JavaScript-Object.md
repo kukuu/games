@@ -464,7 +464,7 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 https://medium.com/javascript-in-plain-english/5-simple-tips-to-write-better-arrow-functions-a55f40f63d58
 
 
-## REACT Native
+## managing API promises with async await t
 
 api POST template:
 
