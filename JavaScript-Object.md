@@ -464,7 +464,7 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 https://medium.com/javascript-in-plain-english/5-simple-tips-to-write-better-arrow-functions-a55f40f63d58
 
 
-## managing API promises with async await t
+## managing API promises with async await
 
 api POST template:
 
