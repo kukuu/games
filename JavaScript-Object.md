@@ -518,8 +518,9 @@ CRA scaffolding template - https://github.com/kukuu/algorithms/tree/master/mtest
 
 ## REACT Hooks with async/await API calls
 
-https://github.com/kukuu/react-hooks/tree/master/react-hooks-api
+Notes: https://github.com/kukuu/react-hooks/blob/master/react-hooks-api/notes.md
 
-https://github.com/kukuu/react-hooks/blob/master/react-hooks-api/src/Planets.js
+App: https://github.com/kukuu/react-hooks/tree/master/react-hooks-api
+
 
 
