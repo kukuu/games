@@ -204,7 +204,7 @@ let user = {
 
     }
 }
-let k = user.student.address;
+
 //Accessing objects
 //console.log(object.foo);
 
@@ -212,6 +212,8 @@ let k = user.student.address;
 console.log(user.ID = user.ID + 1 );
 
 console.log(user["ID"] = user["ID"] + 2);
+
+let k = user.student.address;
 
 console.log(user.student.name + " is " + user.student.age + " years old and lives at "  + 
 k["address1"] + " " + k["postCode"]);
