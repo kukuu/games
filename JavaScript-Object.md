@@ -516,4 +516,8 @@ Contact List - https://github.com/kukuu/algorithms/tree/master/mcreate-react-app
 
 CRA scaffolding template - https://github.com/kukuu/algorithms/tree/master/mtest-app
 
+## REACT Hooks with async/await API calls
+
+https://github.com/kukuu/react-hooks/blob/master/react-hooks-api/src/Planets.js
+
 
