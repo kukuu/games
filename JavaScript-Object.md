@@ -300,7 +300,7 @@ axios
 ```
 ## Passing argument  to FETCH API
 
- You can use an object as parameterwith sequences of properties to hook into the FETCH
+ You can use an object as parameter with sequences of properties to hook into the FETCH
 
 ```
 
