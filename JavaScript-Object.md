@@ -428,9 +428,11 @@ Resource:
 
 https://css-tricks.com/debouncing-throttling-explained-examples/
 
-## Managing CSS performance
+## Managing CSS 
 
-https://github.com/kukuu/styled-components-in-ReactJS
+Performance - https://github.com/kukuu/styled-components-in-ReactJS
+
+Flexbox - https://github.com/kukuu/algorithms/tree/master/flexbox
 
 ## REACT Native API calls
 
