@@ -614,5 +614,9 @@ export default Planets;
 
 App: https://github.com/kukuu/react-hooks/tree/master/react-hooks-api
 
+## JWT
 
+Architecture: https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-architecture.png
+
+Procedures: https://jwt.io/introduction/
 
