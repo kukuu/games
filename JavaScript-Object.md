@@ -520,7 +520,39 @@ CRA scaffolding template - https://github.com/kukuu/algorithms/tree/master/mtest
 
 ## REACT Hooks with async/await API calls
 
-Notes: https://github.com/kukuu/react-hooks/blob/master/react-hooks-api/notes.md
+```
+
+import React, { useState, useEffect } from "react";
+
+const Planets = () => {
+  const [hasError, setErrors] = useState(false);
+  const [planets, setPlanets] = useState({});
+
+  async function fetchData() {
+    const res = await fetch("https://swapi.co/api/planets/4/");
+    res
+      .json()
+      .then(res => setPlanets(res))
+      .catch(err => setErrors(err));
+  }
+
+//Call a function in a function. Pure functions
+  useEffect(() => {
+    fetchData();
+  });
+
+  return (
+    <div>
+      <span>{JSON.stringify(planets)}</span>
+      <hr />
+      <span>Has error: {JSON.stringify(hasError)}</span>
+    </div>
+  );
+};
+
+export default Planets;
+
+```
 
 App: https://github.com/kukuu/react-hooks/tree/master/react-hooks-api
 
