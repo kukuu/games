@@ -620,5 +620,7 @@ Architecture: https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-archi
 
 Procedures: https://jwt.io/introduction/
 
-Implementation - https://github.com/kukuu/node-token-authentication
+jwt Implementation - https://github.com/kukuu/node-token-authentication
+
+2FA Implementation - https://github.com/kukuu/nodeJS-2-factor-authentication
 
