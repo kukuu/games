@@ -624,3 +624,7 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 2FA Implementation - https://github.com/kukuu/nodeJS-2-factor-authentication
 
+## Scaffolding 
+
+- https://github.com/kukuu/AGILITY/blob/master/README-scaffolding.md
+
