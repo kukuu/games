@@ -662,7 +662,17 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/CI-CD-pipeline-with-Jenkins/tree/master/BDD
 
-## Selections
+## SOA vs Microservice
 
-https://github.com/kukuu/selections
+- https://github.com/kukuu/AGILITY/blob/master/SOA-and-MicroServices.md
+
+- https://github.com/kukuu/AGILITY/blob/master/SOA-1.png
+
+- https://github.com/kukuu/digitalTransformationStrategies/blob/master/APIgatewayResolution4microservices.png
+
+## Selections & Resources
+
+- https://github.com/kukuu/selections
+
+- https://github.com/kukuu/AGILITY/blob/master/resources/resources.md
 
