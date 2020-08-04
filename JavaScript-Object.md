@@ -642,3 +642,7 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/AGILITY/blob/master/white-paper/kubernetes/1.png
 
+## Selections
+
+https://github.com/kukuu/selections
+
