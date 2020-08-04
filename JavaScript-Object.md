@@ -642,6 +642,16 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/AGILITY/blob/master/white-paper/kubernetes/1.png
 
+
+## BDD
+
+- https://github.com/kukuu/AGILITY/blob/master/BDD.md
+
+
+## Requireent gathering and feature refinement
+
+- https://github.com/kukuu/CI-CD-pipeline-with-Jenkins/tree/master/BDD
+
 ## Selections
 
 https://github.com/kukuu/selections
