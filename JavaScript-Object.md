@@ -257,47 +257,12 @@ fetch('https://jsonplaceholder.typicode.com/postses').then(function (response) {
 });
 
 ```
-## Handling multitple API calls with AXIOS
 
-Using es6 : 
+## The FETCH API with REACT class objects
 
-1. imports
-2. Spread operator to manage aggregation and update
+https://github.com/kukuu/react-api-fetch-data/tree/master/fetch
 
-```
-import axios from "axios";
 
-let one =
-  "https://api.storyblok.com/v1/cdn/stories/health?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
-  
-let two =
-  "https://api.storyblok.com/v1/cdn/datasources/?token=wANpEQEsMYGOwLxwXQ76Ggtt";
-
-let three =
-  "https://api.storyblok.com/v1/cdn/stories/vue?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
-
-const requestOne = axios.get(one);
-const requestTwo = axios.get(two);
-const requestThree = axios.get(three);
-
-axios
-  .all([requestOne, requestTwo, requestThree])
-  .then(
-    axios.spread((...responses) => {
-      const responseOne = responses[0];
-      const responseTwo = responses[1];
-      const responesThree = responses[2];
-
-      // results
-      console.log(responseOne, responseTwo, responesThree);
-    })
-  )
-  .catch(errors => {
-    // react on errors.
-    console.error(errors);
-  });
-
-```
 ## Passing argument  to FETCH API
 
  You can use an object as parameter with sequences of properties to hook into the FETCH
@@ -358,6 +323,47 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 	// There was an error
 	console.warn('Something went wrong.', err);
 });
+
+```
+## Handling multitple API calls with AXIOS
+
+Using es6 : 
+
+1. imports
+2. Spread operator to manage aggregation and update
+
+```
+import axios from "axios";
+
+let one =
+  "https://api.storyblok.com/v1/cdn/stories/health?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
+  
+let two =
+  "https://api.storyblok.com/v1/cdn/datasources/?token=wANpEQEsMYGOwLxwXQ76Ggtt";
+
+let three =
+  "https://api.storyblok.com/v1/cdn/stories/vue?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt";
+
+const requestOne = axios.get(one);
+const requestTwo = axios.get(two);
+const requestThree = axios.get(three);
+
+axios
+  .all([requestOne, requestTwo, requestThree])
+  .then(
+    axios.spread((...responses) => {
+      const responseOne = responses[0];
+      const responseTwo = responses[1];
+      const responesThree = responses[2];
+
+      // results
+      console.log(responseOne, responseTwo, responesThree);
+    })
+  )
+  .catch(errors => {
+    // react on errors.
+    console.error(errors);
+  });
 
 ```
 
