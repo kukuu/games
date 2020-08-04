@@ -670,6 +670,11 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/digitalTransformationStrategies/blob/master/APIgatewayResolution4microservices.png
 
+
+## Node Token Authentication
+
+- https://github.com/kukuu/node-token-authentication
+
 ## Selections & Resources
 
 - https://github.com/kukuu/selections
