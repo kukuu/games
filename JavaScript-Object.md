@@ -640,6 +640,10 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/AGILITY/blob/master/system-design-architecture.md
 
+## Software Architecture patterns
+
+- https://github.com/kukuu/AGILITY/blob/master/white-paper/software-architecture.md
+
 ## CI/CD 
 
 - https://github.com/kukuu/AGILITY/blob/master/white-paper/CI-CDL-CDPL-pipeline.jpgS
