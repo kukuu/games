@@ -439,7 +439,7 @@ Resource:
 https://css-tricks.com/debouncing-throttling-explained-examples/
 
 
-3. Treeshaking - https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking
+3. Treeshaking (Dead code elimination) - https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking
 
 ## Managing CSS 
 
