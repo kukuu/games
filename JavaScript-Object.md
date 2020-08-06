@@ -754,6 +754,46 @@ function Recipe({ food, isEdit }) {
   );
 }
 ```
+
+iv. CONDITIONAL RENDERING IN REACT: &&
+
+
+```
+
+function LoadingIndicator({ isLoading }) {
+  return <div>{isLoading ? <p>Loading...</p> : null}</div>;
+}
+
+```
+This works just fine and you are done inlining the condition in your JSX. 
+However, there exists an alternative way that omits the necessity to return null.
+
+The logical && operator helps you to make conditions that would return null more concise. 
+In JavaScript, a true && 'Hello World' always evaluates to 'Hello World'. A false && 'Hello World' always evaluates to false:
+
+```
+const result = true && 'Hello World';
+console.log(result);
+// Hello World
+ 
+const result = false && 'Hello World';
+console.log(result);
+// false
+```
+In React, you can make use of this behaviour. If the condition is true, the expression after
+the logical && operator will be the output. If the condition is false, React ignores and skips the expression:
+
+```
+function LoadingIndicator({ isLoading }) {
+  return <div>{isLoading && <p>Loading...</p>}</div>;
+}
+
+```
+
+
+v. CONDITIONAL RENDERING IN REACT: SWITCH CASE
+
+
 ## JWT
 
 Architecture: https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-architecture.png
