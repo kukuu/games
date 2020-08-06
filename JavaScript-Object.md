@@ -792,7 +792,48 @@ function LoadingIndicator({ isLoading }) {
 
 
 v. CONDITIONAL RENDERING IN REACT: SWITCH CASE
+Now there might be cases where you have multiple conditional renderings. 
+Take for example a notification component that renders an error, warning, 
+or info component based on a status string.
 
+This basically how a REDUCER works. Pure function takes to parameters: an argument(payload) and a state:
+
+```
+function Notification({ text, status }) {
+  if (status === 'info') {
+    return <Info text={text} />;
+  }
+ 
+  if (status === 'warning') {
+    return <Warning text={text} />;
+  }
+ 
+  if (status === 'error') {
+    return <Error text={text} />;
+  }
+ 
+  return null;
+}
+```
+
+You can equally use SWITCH statements
+
+```
+
+function Notification({ text, status }) {
+  switch (status) {
+    case 'info':
+      return <Info text={text} />;
+    case 'warning':
+      return <Warning text={text} />;
+    case 'error':
+      return <Error text={text} />;
+    default:
+      return null;
+  }
+}
+
+```
 
 ## JWT
 
