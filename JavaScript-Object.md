@@ -627,6 +627,133 @@ export default Planets;
 
 App: https://github.com/kukuu/react-hooks/tree/master/react-hooks-api
 
+## REACT conditional rendering
+- https://www.robinwieruch.de/conditional-rendering-react
+
+Note the parent child injection order. In each state the child are passsed as props()attibutes
+
+app : List: Item
+
+1. App
+
+2. List
+
+3. Item
+
+
+i. CONDITIONAL RENDERING IN REACT: IF
+```
+
+const users = [
+  { id: '1', firstName: 'Robin', lastName: 'Wieruch' },
+  { id: '2', firstName: 'Dennis', lastName: 'Wieruch' },
+];
+ 
+function App() {
+  return (
+    <div>
+      <h1>Hello Conditional Rendering</h1>
+      <List list={users} />
+    </div>
+  );
+}
+ 
+function List({ list }) {
+  if (!list) {
+    return null;
+  }
+ 
+  return (
+    <ul>
+      {list.map(item => (
+        <Item key={item.id} item={item} />
+      ))}
+    </ul>
+  );
+}
+ 
+function Item({ item }) {
+  return (
+    <li>
+      {item.firstName} {item.lastName}
+    </li>
+  );
+}
+
+```
+
+ii. CONDITIONAL RENDERING IN REACT: IF ELSE
+
+```
+function List({ list }) {
+  if (!list) {
+    return null;
+  }
+ 
+  if (!list.length) {
+    return <p>Sorry, the list is empty.</p>;
+  } else {
+    return (
+      <div>
+        {list.map(item => (
+          <Item item={item} />
+        ))}
+      </div>
+    );
+  }
+}
+```
+ii-b
+
+Even better for best practice use a single if statement to guard each return statement
+
+```
+function List({ list }) {
+  if (!list) {
+    return null;
+  }
+ 
+  if (!list.length) {
+    return <p>Sorry, the list is empty.</p>;
+  }
+ 
+  return (
+    <div>
+      {list.map(item => (
+        <Item item={item} />
+      ))}
+    </div>
+  );
+}
+```
+
+iii. Using the ternary Operator
+
+```
+  return isVegetarian ? 'tofu' : 'fish';
+}
+```
+
+
+For instance, imagine your component shows either a preview or edit mode. 
+The condition is a JavaScript boolean which comes in as React prop. You can use the boolean to decide
+which element you want to conditionally render:
+
+```
+function Recipe({ food, isEdit }) {
+  return (
+    <div>
+      {food.name}
+ 
+      {isEdit ? (
+        <EditRecipe food={food} />
+      ) : (
+        <ShowRecipe food={food} />
+      )}
+    </div>
+  );
+}
+```
 ## JWT
 
 Architecture: https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-architecture.png
