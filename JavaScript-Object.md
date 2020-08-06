@@ -792,6 +792,7 @@ function LoadingIndicator({ isLoading }) {
 
 
 v. CONDITIONAL RENDERING IN REACT: SWITCH CASE
+
 Now there might be cases where you have multiple conditional renderings. 
 Take for example a notification component that renders an error, warning, 
 or info component based on a status string.
@@ -834,7 +835,18 @@ function Notification({ text, status }) {
 }
 
 ```
+It's wise to use the default for the switch case operator, because a React component always
+has to return an element or null. If a component has a conditional rendering based on a string, 
+it makes sense to describe the interface of the component with TypeScript:
 
+```
+type Status = 'info' | 'warning' | 'error';
+ 
+type NotificationProps = {
+  text: string;
+  status: Status;
+
+```
 ## JWT
 
 Architecture: https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-architecture.png
@@ -887,6 +899,10 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 ## Node Token Authentication
 
 - https://github.com/kukuu/node-token-authentication
+
+## NodeJS modern backend application
+
+- https://github.com/kukuu/building-and-securing-a-modern-backend-api/tree/master/building-and-securing-a-modern-back-end-api/Building-and-securing-a-modern-backend-api
 
 ## AGILITY
 
