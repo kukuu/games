@@ -372,7 +372,9 @@ axios
 - https://github.com/kukuu/AGILITY/blob/master/JavaScript-EventLoop.md
 
 
-## Managing JavaScript Performance - Throttle vs Debounce
+## Managing JavaScript Performance 
+
+1.  Throttle vs Debounce
 
  There might be some functionality in a web page which requires time-consuming computations. 
  If such a method is invoked frequently, it might greatly affect the performance of the browser, 
@@ -424,7 +426,7 @@ Reversing their roles:
 	
 	
 	
-requestAnimationFrame (rAF): 
+2. requestAnimationFrame (rAF): 
 
 requestAnimationFrame is another way of rate-limiting the execution of a function.
 
@@ -435,6 +437,9 @@ since it’s a browser native API that aims for better accuracy.
 Resource:
 
 https://css-tricks.com/debouncing-throttling-explained-examples/
+
+
+3. Treeshaking - https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking
 
 ## Managing CSS 
 
