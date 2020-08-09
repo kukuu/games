@@ -919,6 +919,8 @@ https://github.com/kukuu/AGILITY/blob/master/motivation.md
 
 ## Selections & Resources
 
+- https://github.com/kukuu/algorithms/blob/master/leads/leads.md
+
 - https://github.com/kukuu/selections
 
 - https://github.com/kukuu/AGILITY/blob/master/resources/resources.md
