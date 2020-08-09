@@ -838,7 +838,7 @@ function Notification({ text, status }) {
 ```
 It's wise to use the default for the switch case operator, because a React component always
 has to return an element or null. If a component has a conditional rendering based on a string, 
-it makes sense to describe the interface of the component with TypeScript:
+it makes sense to describe the interface of the component with TypeScript. Using union operator
 
 ```
 type Status = 'info' | 'warning' | 'error';
