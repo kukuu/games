@@ -1,9 +1,18 @@
 
 ## Leads
 
-## Chrome
+### Chrome
+
+1. Git 
+https://stackabuse.com/git-merge-branch-into-master/
+https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide
+
+2. Bitbucket
+https://support.atlassian.com/bitbucket-cloud/docs/create-and-push-a-branch/
 
 
+3. How to use Firebase in React Native - Part 1
+https://www.youtube.com/watch?v=_Wq1ZPhL3ic
 
 4. Use ssh key to log into remote server
 - https://www.youtube.com/watch?reload=9&v=IgjzGq8WptE&app=desktop
@@ -103,7 +112,7 @@ https://awwapp.com/#
 35. React JS Tutorials for Beginners - 3 - Components
 - https://www.youtube.com/watch?v=OzqR10jG1pg
 
-## Safari
+## #Safari
 
 1. React JS / Redux Tutorial - 1 - What is Redux?
 - https://www.youtube.com/watch?v=DiLVAXlVYR0
@@ -257,19 +266,7 @@ https://www.youtube.com/watch?v=s8eNG0dxa_M
 47. react-native-news-app
 https://github.com/code-fi/react-native-news-app
 
-48. Git 
-https://stackabuse.com/git-merge-branch-into-master/
-https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide
 
-49. Bitbucket
-https://support.atlassian.com/bitbucket-cloud/docs/create-and-push-a-branch/
-
-50. xCode Tutorials
-- https://www.youtube.com/watch?v=YGOviWHPNjQ
-
-
-51. How to use Firebase in React Native - Part 1
-https://www.youtube.com/watch?v=_Wq1ZPhL3ic
 
 
 
