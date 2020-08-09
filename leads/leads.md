@@ -3,14 +3,7 @@
 
 ## Chrome
 
-1. Gmail
- - https://mail.google.com/mail/u/0/?js=RAW&maximize=true&hide=true&position=absolute&hl=en-GB&emailsLink=true&sk=true&titleBar=false&border=NONE&eventCallback=ParentStub1277142299567&zx=imv0xvp0h9i&shva=1#inbox
 
-2. Azzotto
-- https://azzotto-git-master.azzotto.vercel.app/channel/article/ghanaweb
-
-3. Harvey Nash Contract System
-- https://www.cmsonline.info/User/Account/LogOn
 
 4. Use ssh key to log into remote server
 - https://www.youtube.com/watch?reload=9&v=IgjzGq8WptE&app=desktop
