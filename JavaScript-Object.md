@@ -901,6 +901,9 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/node-token-authentication
 
+## SQS for Microservices - Media Transcoding
+- https://github.com/kukuu/algorithms/tree/master/SQS
+
 ## NodeJS modern backend application
 
 - https://github.com/kukuu/building-and-securing-a-modern-backend-api/tree/master/building-and-securing-a-modern-back-end-api/Building-and-securing-a-modern-backend-api
