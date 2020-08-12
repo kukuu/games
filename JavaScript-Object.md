@@ -40,25 +40,7 @@ let object = {
 ```
 
 Note the use of whitespace in the previous example.
-As a refactor you can also do, for:
 
-```
-const object = {
-	foo: {
-		bar: {
-			baz: 4
-		}
-	}
-}
-
-const baz = obj?.foo?.bar?.baz //4
-
-const safe = obj?.qux?.baz //undefined
-
-//Optional chaining canalso co-exist, consider effect on performance.
-
-obj?.foo.bar?.baz
-```
 
 ## Accessing Properties
 JavaScript provides two notations for accessing object properties.
@@ -99,6 +81,26 @@ Bracket notation also allows property names to contain characters that are forbi
 
 object["!@#$%^&*()."] = true;
 
+```
+
+As a refactor you can also do, for:
+
+```
+const object = {
+	foo: {
+		bar: {
+			baz: 4
+		}
+	}
+}
+
+const baz = obj?.foo?.bar?.baz //4
+
+const safe = obj?.qux?.baz //undefined
+
+//Optional chaining canalso co-exist, consider effect on performance.
+
+obj?.foo.bar?.baz
 ```
 
 ## Accessing Nested Properties
