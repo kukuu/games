@@ -98,7 +98,7 @@ const baz = obj?.foo?.bar?.baz //4
 
 const safe = obj?.qux?.baz //undefined
 
-//Optional chaining canalso co-exist, consider effect on performance.
+//Optional chaining can also co-exist, consider effect on performance.
 
 obj?.foo.bar?.baz
 ```
