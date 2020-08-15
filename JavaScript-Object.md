@@ -937,6 +937,10 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://github.com/kukuu/AGILITY/blob/master/ManagementStyles-InfluencingSkills.md
 
+## DevOPS
+
+- https://medium.com/better-programming/must-learn-devops-tools-for-2020-1a8a2675e88f
+
 ## Motivation
 
 https://github.com/kukuu/AGILITY/blob/master/motivation.md
