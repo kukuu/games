@@ -941,6 +941,10 @@ jwt Implementation - https://github.com/kukuu/node-token-authentication
 
 - https://medium.com/better-programming/must-learn-devops-tools-for-2020-1a8a2675e88f
 
+## gRPC Architecture
+
+- https://cloud.google.com/endpoints/docs/grpc/about-grpc
+
 ## Motivation
 
 https://github.com/kukuu/AGILITY/blob/master/motivation.md
